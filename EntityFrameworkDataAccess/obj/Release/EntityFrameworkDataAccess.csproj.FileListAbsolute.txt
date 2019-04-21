@@ -1,0 +1,15 @@
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\EntityFrameworkDataAccess\bin\Release\EntityFrameworkDataAccess.dll.config
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\EntityFrameworkDataAccess\bin\Release\EntityFrameworkDataAccess.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\EntityFrameworkDataAccess\bin\Release\EntityFrameworkDataAccess.pdb
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\EntityFrameworkDataAccess\bin\Release\DBMOD.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\EntityFrameworkDataAccess\bin\Release\EntityFramework.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\EntityFrameworkDataAccess\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\EntityFrameworkDataAccess\bin\Release\DBMOD.pdb
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\EntityFrameworkDataAccess\bin\Release\DBMOD.dll.config
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\EntityFrameworkDataAccess\bin\Release\EntityFramework.xml
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\EntityFrameworkDataAccess\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\EntityFrameworkDataAccess\obj\Release\EntityFrameworkDataAccess.csprojAssemblyReference.cache
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\EntityFrameworkDataAccess\obj\Release\EntityFrameworkDataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\EntityFrameworkDataAccess\obj\Release\EntityFrameworkDataAccess.csproj.CopyComplete
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\EntityFrameworkDataAccess\obj\Release\EntityFrameworkDataAccess.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\EntityFrameworkDataAccess\obj\Release\EntityFrameworkDataAccess.pdb

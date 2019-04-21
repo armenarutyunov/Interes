@@ -1,0 +1,30 @@
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\EntityFrameworkDataAccess\bin\Debug\EntityFrameworkDataAccess.dll.config
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\EntityFrameworkDataAccess\bin\Debug\EntityFrameworkDataAccess.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\EntityFrameworkDataAccess\bin\Debug\EntityFrameworkDataAccess.pdb
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\EntityFrameworkDataAccess\bin\Debug\DBMOD.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\EntityFrameworkDataAccess\bin\Debug\EntityFramework.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\EntityFrameworkDataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\EntityFrameworkDataAccess\bin\Debug\DBMOD.pdb
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\EntityFrameworkDataAccess\bin\Debug\DBMOD.dll.config
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\EntityFrameworkDataAccess\bin\Debug\EntityFramework.xml
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\EntityFrameworkDataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\EntityFrameworkDataAccess\obj\Debug\EntityFrameworkDataAccess.csprojAssemblyReference.cache
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\EntityFrameworkDataAccess\obj\Debug\EntityFrameworkDataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\EntityFrameworkDataAccess\obj\Debug\EntityFrameworkDataAccess.csproj.CopyComplete
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\EntityFrameworkDataAccess\obj\Debug\EntityFrameworkDataAccess.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\EntityFrameworkDataAccess\obj\Debug\EntityFrameworkDataAccess.pdb
+C:\ARMEN\Interes-master\EntityFrameworkDataAccess\bin\Debug\EntityFrameworkDataAccess.dll.config
+C:\ARMEN\Interes-master\EntityFrameworkDataAccess\bin\Debug\EntityFrameworkDataAccess.dll
+C:\ARMEN\Interes-master\EntityFrameworkDataAccess\bin\Debug\EntityFrameworkDataAccess.pdb
+C:\ARMEN\Interes-master\EntityFrameworkDataAccess\bin\Debug\DBMOD.dll
+C:\ARMEN\Interes-master\EntityFrameworkDataAccess\bin\Debug\EntityFramework.dll
+C:\ARMEN\Interes-master\EntityFrameworkDataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\ARMEN\Interes-master\EntityFrameworkDataAccess\bin\Debug\DBMOD.pdb
+C:\ARMEN\Interes-master\EntityFrameworkDataAccess\bin\Debug\DBMOD.dll.config
+C:\ARMEN\Interes-master\EntityFrameworkDataAccess\bin\Debug\EntityFramework.xml
+C:\ARMEN\Interes-master\EntityFrameworkDataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\ARMEN\Interes-master\EntityFrameworkDataAccess\obj\Debug\EntityFrameworkDataAccess.csprojAssemblyReference.cache
+C:\ARMEN\Interes-master\EntityFrameworkDataAccess\obj\Debug\EntityFrameworkDataAccess.csproj.CoreCompileInputs.cache
+C:\ARMEN\Interes-master\EntityFrameworkDataAccess\obj\Debug\EntityFrameworkDataAccess.csproj.CopyComplete
+C:\ARMEN\Interes-master\EntityFrameworkDataAccess\obj\Debug\EntityFrameworkDataAccess.dll
+C:\ARMEN\Interes-master\EntityFrameworkDataAccess\obj\Debug\EntityFrameworkDataAccess.pdb

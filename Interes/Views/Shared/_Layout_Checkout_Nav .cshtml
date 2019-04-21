@@ -1,0 +1,78 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Online Restaurant</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+    <script>window.jQuery || document.write('<script src="~JQUERY/jquery-3.3.1.js"><\/script>');</script>
+
+    @*@Scripts.Render("~/MyScripts/SelectCategory.js")*@
+    @*@Scripts.Render("~/MyScripts/SelectCountryCat.js")
+        @Scripts.Render("../MyScripts/SelectCountryCat.js")*@
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Styles.Render("~/Content/Home.css")
+    @*@Styles.Render("~/Content/Home.css")*@
+
+    <style>
+        body {
+            /*background-image: repeating-linear-gradient(90deg,white 1%,grey 2% );*/ /*,green 3%*/
+            /*background-image: url('../Media/Login-Background-Eastern.jpg');*/
+            /*background-repeat: no-repeat;*/
+            background-image: url('../Media/Login-Background-Black.jpg');
+            background-attachment: fixed;
+        }
+
+        .DivForButton {
+            position: absolute;
+            /*position: center;*/
+            height: 70%;
+            top: 4px;
+            border: solid;
+            border-radius: 7px;
+            border-width: 1px;
+            border-color: white;
+            text-align: center;
+        }
+
+            .DivForButton:hover {
+                background-color: white;
+            }
+        .DivForElement {
+            position: relative;
+            position: center;
+            height: 70%;
+            top: 0px;
+            color: whitesmoke;
+            text-align: center;
+        }
+        .DivForImg {
+            position: relative;
+            position: center;
+            height: 70%;
+            top: 3px;
+            /*border: solid;
+            border-radius: 7px;
+            border-width: 1px;
+            border-color: white;*/
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    @{Html.RenderAction("NavForBasket", "Home");}
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

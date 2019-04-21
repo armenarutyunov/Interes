@@ -1,0 +1,70 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout_Login.cshtml";
+}
+
+@{
+    ViewBag.Title = "Login";
+}
+
+<style>
+    hr {
+        border: none; /* Убираем границу для браузера Firefox */
+        color: whitesmoke; /* Цвет линии для остальных браузеров */
+        background-color: whitesmoke; /* Цвет линии для браузера Firefox и Opera position:relative;*/
+        height: 1px; /* Толщина линии */
+        width: 40%;
+        margin-left: 0;
+    }
+
+    #SubmitBtn {
+        border: solid;
+        border-width: 2px;
+        border-color: whitesmoke;
+        border-radius: 7px;
+        background-color:black;
+        color:darkorange;
+        font-size:1.5em;
+        font-weight:bold;
+    }
+    #SubmitBtn:hover {
+        background-color: white;
+    }
+
+</style>
+@using (Html.BeginForm("Login", "Login", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    <br />
+    <h2 style="color:whitesmoke;">Enter Your Credentials Here</h2>
+   
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <div class="form-group" @*style =" width:150px; height:100px;"*@>
+            <div class="col-lg-8" style=" color:darkorange; ">
+                <h3>Email address</h3>
+                <input class=" form-control" type="text" name="email" id="ls" /><br />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-lg-8" style=" color:darkorange; ">
+                <h3>Password</h3>
+                <input class="form-control" type="text" name="password" id="ls" /><br />
+            </div>
+        </div>
+        <hr />
+
+        <div class="form-group">
+            <div class="col-md-10">
+
+
+                <input id="SubmitBtn" style="" type="submit" value="Submit" class="btn btn-group-lg" /> @*<div class="col-md-offset-2 col-md-10">*@
+
+            </div>
+        </div>
+        <hr />
+
+    </div>
+}
+@*btn-default btn-lg*@

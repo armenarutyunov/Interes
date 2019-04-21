@@ -1,0 +1,24 @@
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\DBMOD\bin\Debug\DBMOD.dll.config
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\DBMOD\bin\Debug\DBMOD.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\DBMOD\bin\Debug\DBMOD.pdb
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\DBMOD\bin\Debug\EntityFramework.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\DBMOD\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\DBMOD\bin\Debug\EntityFramework.xml
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\DBMOD\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\DBMOD\obj\Debug\DBMOD.csprojAssemblyReference.cache
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\DBMOD\obj\Debug\DBMOD.csproj.CoreCompileInputs.cache
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\DBMOD\obj\Debug\DBMOD.csproj.CopyComplete
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\DBMOD\obj\Debug\DBMOD.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\DBMOD\obj\Debug\DBMOD.pdb
+C:\ARMEN\Interes-master\DBMOD\bin\Debug\DBMOD.dll.config
+C:\ARMEN\Interes-master\DBMOD\bin\Debug\DBMOD.dll
+C:\ARMEN\Interes-master\DBMOD\bin\Debug\DBMOD.pdb
+C:\ARMEN\Interes-master\DBMOD\bin\Debug\EntityFramework.dll
+C:\ARMEN\Interes-master\DBMOD\bin\Debug\EntityFramework.SqlServer.dll
+C:\ARMEN\Interes-master\DBMOD\bin\Debug\EntityFramework.xml
+C:\ARMEN\Interes-master\DBMOD\bin\Debug\EntityFramework.SqlServer.xml
+C:\ARMEN\Interes-master\DBMOD\obj\Debug\DBMOD.csprojAssemblyReference.cache
+C:\ARMEN\Interes-master\DBMOD\obj\Debug\DBMOD.csproj.CoreCompileInputs.cache
+C:\ARMEN\Interes-master\DBMOD\obj\Debug\DBMOD.csproj.CopyComplete
+C:\ARMEN\Interes-master\DBMOD\obj\Debug\DBMOD.dll
+C:\ARMEN\Interes-master\DBMOD\obj\Debug\DBMOD.pdb

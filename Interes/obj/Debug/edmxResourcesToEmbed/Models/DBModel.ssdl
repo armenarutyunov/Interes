@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="DBModelStoreContainer">
+    <EntitySet Name="Products" EntityType="DBModel.Store.Products" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Orders" EntityType="DBModel.Store.Orders" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Security_Logins" EntityType="DBModel.Store.Security_Logins" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Customers" EntityType="DBModel.Store.Customers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="OrderDetails" EntityType="DBModel.Store.OrderDetails" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="CustomerSecurity_Login" Association="DBModel.Store.CustomerSecurity_Login">
+      <End Role="Customer" EntitySet="Customers" />
+      <End Role="Security_Login" EntitySet="Security_Logins" />
+    </AssociationSet>
+    <AssociationSet Name="CustomerOrder" Association="DBModel.Store.CustomerOrder">
+      <End Role="Customer" EntitySet="Customers" />
+      <End Role="Order" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="OrderOrderDetail" Association="DBModel.Store.OrderOrderDetail">
+      <End Role="Order" EntitySet="Orders" />
+      <End Role="OrderDetail" EntitySet="OrderDetails" />
+    </AssociationSet>
+    <AssociationSet Name="ProductOrderDetail" Association="DBModel.Store.ProductOrderDetail">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="OrderDetail" EntitySet="OrderDetails" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Products">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductTitle" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="NativeTitle" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ImageSrc" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Category" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="SubCategory" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Country" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PortionPrice" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CaloriesPer100g" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PortionWeight" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MainComponents" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CookingRecipe" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Orders">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OrderDate" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ProductCost" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="DeliveryCost" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="TotalHST" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="TotalCost" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="City" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Street" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="HomeNumber" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="UnitNumber" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PostalCode" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CustomerId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Security_Logins">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Email" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Password" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="RegistrationDate" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Customers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LastName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Phone" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Security_Login_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OrderDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PortionsQuantity" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="OrderId" Type="int" Nullable="false" />
+    <Property Name="ProductId" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="CustomerSecurity_Login">
+    <End Role="Customer" Type="DBModel.Store.Customers" Multiplicity="*" />
+    <End Role="Security_Login" Type="DBModel.Store.Security_Logins" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Security_Login">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Customer">
+        <PropertyRef Name="Security_Login_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CustomerOrder">
+    <End Role="Customer" Type="DBModel.Store.Customers" Multiplicity="1" />
+    <End Role="Order" Type="DBModel.Store.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="OrderOrderDetail">
+    <End Role="Order" Type="DBModel.Store.Orders" Multiplicity="1" />
+    <End Role="OrderDetail" Type="DBModel.Store.OrderDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Order">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OrderDetail">
+        <PropertyRef Name="OrderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ProductOrderDetail">
+    <End Role="Product" Type="DBModel.Store.Products" Multiplicity="1" />
+    <End Role="OrderDetail" Type="DBModel.Store.OrderDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OrderDetail">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

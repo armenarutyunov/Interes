@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "To Pick Up Your Food Basket and Make The Order You Need:";
+    Layout = "~/Views/Shared/_Layout - Nav.cshtml";
+}
+
+<style>
+    body {
+        color: whitesmoke;
+    }
+    .DivForButton { 
+        background-color: black;
+    }
+</style>
+<br />
+<h2 style="color:orangered;">@ViewBag.Title</h2>
+
+
+<h2>1. Proceed to the  <a href="/Menu/Menu" id="PickDish" class="btn btn-md" style="font-weight:bold; font-size:1em; color:darkorange;">Menu</a> page to specify the dishes and  quantity of portions.</h2>
+<h2>
+    2. Then, by pressing on the basket sign <a href="/Menu/ShowBasket" class="btn" style="padding-top:0.2em; border:none;">
+        <img src="../Media/CART/SC_Orange.png" width="50" height="36" ; style=" position:relative;" />
+    </a>
+    ,  you you will proceed to the following page and will be able to see compleate list of items and provide needed corrections.<br />You can remove items from the basket
+    or change the quantity of portions. <br />You also will be able to get back to the Page  <a href="/Menu/Menu" id="PickDish" class="btn btn-md" style="font-weight:bold; font-size:1em; color:darkorange;">Menu</a> to add some dishes again
+</h2>
+<h2>
+    3. After your basket is completely formed, you can proceed to the <a href="/Checkout/OrderDetails" class="btn btn-md" style="font-weight:bold; font-size:1em;color:darkorange;">Checkout</a> page to provide us with your location, delivery time and contact details<br />
+    After this information is entered, please, push the button "Submit" and confirmation email will be sent on your email address.
+</h2>
+
+<h3 style="color:orangered;">
+    We want to mention here that all the orders have to be made up to 36 hours before the assigned delivery time. Regular delivery price is 12CAD and will be reduced up to the free one starting from 120CAD of total basket cost
+</h3>
+
+
+    <ul class="nav navbar-nav" style="font-size:20px;color:red;">
+
+        <li>
+            <div class="DivForButton" >
+
+                <a href="/Home/Home" class="btn  btn-md" style="font-weight:bold; font-size:20px;color:darkorange;">Back To Home Page</a>
+            </div>
+        </li>
+        </ul>

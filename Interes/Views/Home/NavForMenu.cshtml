@@ -1,0 +1,77 @@
+﻿@model  Interes.Models.MenuData
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav" style="font-size:20px;color:red;">
+
+                <li>
+                    <div class="DivForButton">
+
+                        <a href="/Home/Home" class="btn  btn-md" style="font-weight:bold; font-size:20px;color:darkorange;">Home</a>
+                    </div>
+                </li>
+                <li>&nbsp;</li>
+                <li>
+                    <div class="DivForButton">
+                        <button id="FilterBtn" href="" class="btn  btn-md" style=" background-color:transparent; font-weight:bold; font-size:20px; color:darkorange;">Hide Filter Pad</button>
+                    </div>
+                </li>
+
+                <li>&nbsp;</li>
+
+                <li>
+                    <div class="DivForButton">
+                        <a href="/Checkout/OrderDetails" class="btn btn-md" style="font-weight:bold; font-size:20px;color:darkorange;">Checkout</a>
+                    </div>
+                </li>
+
+                @{
+                    if (Model.IsAdmin)
+                    {
+                        <li>&nbsp;</li>
+                        <li>
+                            <div class="DivForButton">
+                                <a href="/Login/Admin" class="btn btn-md" style="font-weight:bold; font-size:20px;color:darkorange;">Admin Page</a>
+                            </div>
+                        </li>
+                        <li>&nbsp;</li>
+                        <li>
+                            <div class="DivForButton"><a href="/Login/AdminSignOut" class="btn btn-md" style="font-weight:bold; font-size:20px;color:darkorange;">Sign Out</a></div>
+                        </li>
+                    }
+                    else if (string.IsNullOrEmpty(Model.Customer[0]))
+                    {
+                        <li>&nbsp;</li>
+                        <li>
+                            <div class="DivForButton"><a href="/Login/login" class="btn btn-md" style="font-weight:bold; font-size:20px;color:darkorange;">Sign In</a></div>
+                        </li>
+                        <li>&nbsp;</li>
+                        <li>
+                            <div class="DivForButton"><a href="/Login/SignUp" class="btn btn-md" style="font-weight:bold; font-size:20px;color:darkorange;">Sign Up</a></div>
+                        </li>
+                    }
+                    else
+                    {
+                        <li>&nbsp;</li>
+                        <li>
+                            <a href="/" class="btn btn-md" style="font-weight:bold; font-size:20px;color:orangered; border:none;">@Model.Customer[0]</a>
+                        </li>
+                        <li>&nbsp;</li>
+                        <li>
+                            <a href="/Login/Logout" class="btn btn-md" style="font-weight:bold; font-size:20px;color:orangered; border:none;">Logout</a>
+                        </li>
+                    }
+                }
+                <li>
+                    <div class="DivForElement">
+                        <a href="/Menu/ShowBasket" class="btn" style=" padding-top:0.2em; border:none; background-color:transparent;">
+                            <img src="../Media/CART/SC_Orange.png" width="50" height="36" ; style=" position:relative;" />&nbsp;&nbsp;&nbsp;<span id="CartItems" style="position:relative; top:0.2em; color:whitesmoke; font-weight:initial; font-size:1.8em;">@Model.bsg.ItemsTotal().ToString()</span>
+                            &nbsp;&nbsp;<span style="position:relative; top:0.2em; color:darkorange; font-weight:initial; font-size:1.8em;">Items</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

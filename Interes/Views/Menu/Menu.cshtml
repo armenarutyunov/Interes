@@ -1,0 +1,478 @@
+﻿@model string
+@{
+    ViewBag.Title = "TestPage";
+    Layout = "~/Views/Shared/_Layout_Menu_Nav.cshtml";
+}
+@{
+    ViewBag.Title = "Menu";
+}
+<style>
+    body {
+        color: whitesmoke;
+    }
+
+    .sticky {
+        position: sticky;
+        top: 0;
+        /*min-height: 2em;
+        background: lightpink;*/
+    }
+</style>
+<script>
+    //jQuery.ajaxSetup({ async: false });
+    document.addEventListener("DOMContentLoaded", MenuCheckboxes);
+    function MenuCheckboxes() {
+        var mfp = '@Model';
+        $("#ShowSelection").css("display", "block");
+        //$("#FilterPad").css("display", "none");
+        //$("#FilterBtn").text("Expand Filter Pad");
+
+        if (mfp.charAt(0) == "y") { $("#Check_AS").prop('checked', true); } else { $("#Check_AS").prop('checked', false); };
+        if (mfp.charAt(1) == "y") { $("#Check_MC").prop('checked', true); } else { $("#Check_MC").prop('checked', false); };
+        if (mfp.charAt(2) == "y") { $("#Check_SP").prop('checked', true); } else { $("#Check_SP").prop('checked', false); };
+        if (mfp.charAt(3) == "y") { $("#Check_DS").prop('checked', true); } else { $("#Check_DS").prop('checked', false); };
+        if (mfp.charAt(4) == "y") { $("#Check_BG").prop('checked', true); } else { $("#Check_BG").prop('checked', false); };
+        if (mfp.charAt(5) == "y") { $("#Check_BR").prop('checked', true); } else { $("#Check_BR").prop('checked', false); };
+        if (mfp.charAt(6) == "y") { $("#Check_ALL").prop('checked', true); } else { $("#Check_ALL").prop('checked', false); };
+
+        if (mfp.charAt(7) == "y") { $("#Check_AM").prop('checked', true); } else { $("#Check_AM").prop('checked', false); };
+        if (mfp.charAt(8) == "y") { $("#Check_GE").prop('checked', true); } else { $("#Check_GE").prop('checked', false); };
+        if (mfp.charAt(9) == "y") { $("#Check_AZ").prop('checked', true); } else { $("#Check_AZ").prop('checked', false); };
+        if (mfp.charAt(10) == "y") { $("#Check_IR").prop('checked', true); } else { $("#Check_IR").prop('checked', false); };
+        if (mfp.charAt(11) == "y") { $("#ALL_Country").prop('checked', true); } else { $("#ALL_Country").prop('checked', false); };
+
+        ShowDishes();
+
+        //if ($("#Check_AS").is(':checked')) { $("#Show_AS").css("display", "block"); } else { $("#Show_AS").css("display", "none"); };
+        //if ($("#Check_MC").is(':checked')) { $("#Show_MC").css("display", "block"); } else { $("#Show_MC").css("display", "none"); };
+        //if ($("#Check_SP").is(':checked')) { $("#Show_SP").css("display", "block"); } else { $("#Show_SP").css("display", "none"); };
+        //if ($("#Check_DS").is(':checked')) { $("#Show_DS").css("display", "block"); } else { $("#Show_DS").css("display", "none"); };
+        //if ($("#Check_BG").is(':checked')) { $("#Show_BG").css("display", "block"); } else { $("#Show_BG").css("display", "none"); };
+        //if ($("#Check_BR").is(':checked')) { $("#Show_BR").css("display", "block"); } else { $("#Show_BR").css("display", "none"); };
+
+        //if ($("#Check_AM").is(':checked')) { $("#Show_AM").css("display", "block"); } else { $("#Show_AM").css("display", "none"); };
+        //if ($("#Check_GE").is(':checked')) { $("#Show_GE").css("display", "block"); } else { $("#Show_GE").css("display", "none"); };
+        //if ($("#Check_AZ").is(':checked')) { $("#Show_AZ").css("display", "block"); } else { $("#Show_AZ").css("display", "none"); };
+        //if ($("#Check_IR").is(':checked')) { $("#Show_IR").css("display", "block"); } else { $("#Show_IR").css("display", "none"); };
+
+
+    }
+
+    //$(document).ready(function () {
+
+    $().ready(function () {
+
+        $('#ShowInMenu').on("click", ShowDishes);
+
+
+    });
+    function ShowDishes() {
+        //event.preventDefault();
+        $("#ShowSelection").css("display", "block");
+        //$("#FilterPad").css("display", "none");
+        //$("#FilterBtn").text("Expand Filter Pad");
+       
+
+
+        if ($("#Check_AM").is(':checked')) { $("#AM_AS").css("display", "block"); } else { $("#AM_AS").css("display", "none"); };
+        if ($("#Check_AZ").is(':checked')) { $("#AZ_AS").css("display", "block"); } else { $("#AZ_AS").css("display", "none"); };
+        if ($("#Check_GE").is(':checked')) { $("#GE_AS").css("display", "block"); } else { $("#GE_AS").css("display", "none"); };
+        if ($("#Check_IR").is(':checked')) { $("#IR_AS").css("display", "block"); } else { $("#IR_AS").css("display", "none"); };
+        if ($("#Check_AS").is(':checked')) { $("#Menu_AS").css("display", "block"); } else { $("#Menu_AS").css("display", "none"); }
+
+        if ($("#Check_AM").is(':checked')) { $("#AM_MC").css("display", "block"); } else { $("#AM_MC").css("display", "none"); };
+        if ($("#Check_AZ").is(':checked')) { $("#AZ_MC").css("display", "block"); } else { $("#AZ_MC").css("display", "none"); };
+        if ($("#Check_GE").is(':checked')) { $("#GE_MC").css("display", "block"); } else { $("#GE_MC").css("display", "none"); };
+        if ($("#Check_IR").is(':checked')) { $("#IR_MC").css("display", "block"); } else { $("#IR_MC").css("display", "none"); };
+        if ($("#Check_MC").is(':checked')) { $("#Menu_MC").css("display", "block"); } else { $("#Menu_MC").css("display", "none"); };
+
+        if ($("#Check_AM").is(':checked')) { $("#AM_SP").css("display", "block"); } else { $("#AM_SP").css("display", "none"); };
+        if ($("#Check_AZ").is(':checked')) { $("#AZ_SP").css("display", "block"); } else { $("#AZ_SP").css("display", "none"); };
+        if ($("#Check_GE").is(':checked')) { $("#GE_SP").css("display", "block"); } else { $("#GE_SP").css("display", "none"); };
+        if ($("#Check_IR").is(':checked')) { $("#IR_SP").css("display", "block"); } else { $("#IR_SP").css("display", "none"); };
+        if ($("#Check_SP").is(':checked')) { $("#Menu_SP").css("display", "block"); } else { $("#Menu_SP").css("display", "none"); };
+
+        if ($("#Check_AM").is(':checked')) { $("#AM_DS").css("display", "block"); } else { $("#AM_DS").css("display", "none"); };
+        if ($("#Check_AZ").is(':checked')) { $("#AZ_DS").css("display", "block"); } else { $("#AZ_DS").css("display", "none"); };
+        if ($("#Check_GE").is(':checked')) { $("#GE_DS").css("display", "block"); } else { $("#GE_DS").css("display", "none"); };
+        if ($("#Check_IR").is(':checked')) { $("#IR_DS").css("display", "block"); } else { $("#IR_DS").css("display", "none"); };
+        if ($("#Check_DS").is(':checked')) { $("#Menu_DS").css("display", "block"); } else { $("#Menu_DS").css("display", "none"); };
+
+        if ($("#Check_AM").is(':checked')) { $("#AM_BG").css("display", "block"); } else { $("#AM_BG").css("display", "none"); };
+        if ($("#Check_AZ").is(':checked')) { $("#AZ_BG").css("display", "block"); } else { $("#AZ_BG").css("display", "none"); };
+        if ($("#Check_GE").is(':checked')) { $("#GE_BG").css("display", "block"); } else { $("#GE_BG").css("display", "none"); };
+        if ($("#Check_IR").is(':checked')) { $("#IR_BG").css("display", "block"); } else { $("#IR_BG").css("display", "none"); };
+        if ($("#Check_BG").is(':checked')) { $("#Menu_BG").css("display", "block"); } else { $("#Menu_BG").css("display", "none"); };
+
+        if ($("#Check_AM").is(':checked')) { $("#AM_BR").css("display", "block"); } else { $("#AM_BR").css("display", "none"); };
+        if ($("#Check_AZ").is(':checked')) { $("#AZ_BR").css("display", "block"); } else { $("#AZ_BR").css("display", "none"); };
+        if ($("#Check_GE").is(':checked')) { $("#GE_BR").css("display", "block"); } else { $("#GE_BR").css("display", "none"); };
+        if ($("#Check_IR").is(':checked')) { $("#IR_BR").css("display", "block"); } else { $("#IR_BR").css("display", "none"); };
+        if ($("#Check_BR").is(':checked')) { $("#Menu_BR").css("display", "block"); } else { $("#Menu_BR").css("display", "none"); };
+        return false;
+    }/*else { $("#ShowSelection").css("display", "none"); };*/
+        //return false;
+    //});
+    //    return false;
+    //});
+    $(document).ready(function () {
+        $("#CloseMenu").click(function (event) {
+            //alert("HHHH");
+            event.preventDefault();
+            //$("#ShowSelection").find($("#Menu_AS")).css("display", "none");
+            $("#ShowSelection").css("display", "none");
+            return false;
+        });
+        return false;
+    });
+    $(document).ready(function () {
+        $("#FilterBtn").click(function (event) {
+            //alert("HHHH");
+            event.preventDefault();
+            if ($("#FilterBtn").text() == "Hide Filter Pad") { $("#FilterPad").css("display", "none"); $("#FilterBtn").text("Expand Filter Pad"); }
+            else { $("#FilterPad").css("display", "Block"); $("#FilterBtn").text("Hide Filter Pad"); }
+            return false;
+        });
+        return false;
+    });
+    $(document).ready(function () {
+
+        $('#Check_ALL').click(function () {
+            //alert("Check_AS is checked");
+            //event.preventDefault();
+            //$("#Show_ALL").css("display", "block");
+            if ($("#Check_ALL").is(':checked')) {
+
+                $("#Check_AS").prop('checked', true);
+                $('#Check_MC').prop('checked', true);
+                $('#Check_SP').prop('checked', true);
+                $('#Check_DS').prop('checked', true);
+                $('#Check_BG').prop('checked', true);
+                $('#Check_BR').prop('checked', true);
+            } else {
+
+                $("#Check_AS").prop('checked', false);
+                $("#Check_MC").prop('checked', false);
+                $("#Check_SP").prop('checked', false);
+                $("#Check_DS").prop('checked', false);
+                $("#Check_BG").prop('checked', false);
+                $("#Check_BR").prop('checked', false);
+            }
+
+        });
+
+        return false;
+    });
+    $(document).ready(function () {
+
+        $('#ALL_Country').click(function () {
+            //alert("Check_AS is checked");
+            //event.preventDefault();
+            //$("#Show_ALL").css("display", "block");
+            if ($("#ALL_Country").is(':checked')) {
+
+                $("#Check_AM").prop('checked', true);
+                $('#Check_GE').prop('checked', true);
+                $('#Check_AZ').prop('checked', true);
+                $('#Check_IR').prop('checked', true);
+
+            } else {
+
+                $("#Check_AM").prop('checked', false);
+                $("#Check_GE").prop('checked', false);
+                $("#Check_AZ").prop('checked', false);
+                $("#Check_IR").prop('checked', false);
+
+            }
+
+        });
+
+        return false;
+    });
+    $(document).ready(function () {
+        $(".btn-group").click(function (event) {
+
+
+            //$.when(AddToBasket()).then(ShowItemsInCart());
+            //AddToBasket();
+            //ShowItemsInCart();
+
+            event.preventDefault();
+            var id = this.nextElementSibling.innerHTML;
+            var quantity = $("#" + id).val();
+            var url0 = "/Menu/AddToCart?id=" + id + "&quantity=" + quantity;
+            
+            $.post({
+                url: url0,
+                //async: false,
+                success: function () {
+                    ShowItemsInCart()
+                }
+            }).done(AddToBasket(id, quantity));
+           
+
+            //$.ajax({
+            //    url: AddToBasket(id, quantity),
+            //    async: false,
+            //    success: function () {
+
+            //    }
+            //    , complete: function () { ShowItemsInCart() }
+            //}).done(ShowItemsInCart());
+           
+            //$.when(AddToBasket(id, quantity)).then(ShowItemsInCart());
+            //AddToBasket(id, quantity, ShowItemsInCart);
+            //ShowItemsInCart();
+            //var url1 = "/Menu/AddToBasket?id=" + id + "&quantity=" + quantity;
+            //$('#AddToBasket').load(url1);
+            //$("#AddToBasket").css("display", "block");
+            //$(document).scrollTop(0);
+            //$(document).trigger('function_a_complete');
+            //ShowItemsInCart();
+
+            //$.post("/Menu/ItemsInCart",
+            //    //{
+            //    //    mfp: mfp
+            //    //},
+            //    function (data, status) {
+            //        $('#CartItems').text(data);
+            //        return false;
+            //    });
+
+            //var url2 = "/Menu/ItemsInBasket";
+            //$('#CartItems').load(url2);
+
+        });
+        return false;
+    });
+    //function AddToCart(id, quantity) {
+
+
+       
+    //    var url1 = "/Menu/AddToCart?id=" + id + "&quantity=" + quantity;
+       
+        
+    //}
+    function AddToBasket(id, quantity/*, Callback*/) {
+
+
+    //var id = this.nextElementSibling.innerHTML;
+    //var quantity = $("#" + id).val();
+        //
+    var url1 = "/Menu/AddToBasket?id=" + id + "&quantity=" + quantity;
+    $('#AddToBasket').load(url1);
+    $("#AddToBasket").css("display", "block");
+        $(document).scrollTop(0);
+        //$(document).trigger('function_a_complete');
+        //Callback();
+        return false;
+    }
+
+    function ShowItemsInCart() {
+        $.post("/Menu/ItemsInCart",
+
+            function (data, status) {
+                $('#CartItems').text(data);
+                return false;
+            });
+    }
+    //$(document).bind('function_a_complete', ShowItemsInCart);
+    $(document).ready(function () {
+        $("a").click(function (event) {
+
+            //event.preventDefault();
+            var mfp;
+            if ($("#Check_AS").is(':checked')) { mfp = "y"; } else { mfp = "n"; };
+            if ($("#Check_MC").is(':checked')) { mfp += "y"; } else { mfp += "n"; };
+            if ($("#Check_SP").is(':checked')) { mfp += "y"; } else { mfp += "n"; };
+            if ($("#Check_DS").is(':checked')) { mfp += "y"; } else { mfp += "n"; };
+            if ($("#Check_BG").is(':checked')) { mfp += "y"; } else { mfp += "n"; };
+            if ($("#Check_BR").is(':checked')) { mfp += "y"; } else { mfp += "n"; };
+            if ($("#Check_ALL").is(':checked')) { mfp += "y"; } else { mfp += "n"; };
+
+            if ($("#Check_AM").is(':checked')) { mfp += "y"; } else { mfp += "n"; };
+            if ($("#Check_GE").is(':checked')) { mfp += "y"; } else { mfp += "n"; };
+            if ($("#Check_AZ").is(':checked')) { mfp += "y"; } else { mfp += "n"; };
+            if ($("#Check_IR").is(':checked')) { mfp += "y"; } else { mfp += "n"; };
+            if ($("#ALL_Country").is(':checked')) { mfp += "y"; } else { mfp += "n"; };
+
+            $.post("/Menu/SaveMenuFilter",
+                {
+                    mfp: mfp
+                },
+                function (data, status) {
+                    //alert("Status:" + status+"  Data:"+data);
+                });
+
+            //var url = "/Menu/ShowBasket?mfp=" + mfp;
+            //window.location.href = url;
+
+        });
+        return false;
+    });
+
+    //$(document).ready(function () {
+
+    //    $('#MyBasketBtn').click(function (event) {
+
+    //        event.preventDefault();
+
+    //        var mfp;
+    //        if ($("#Check_AS").is(':checked')) { mfp = "y"; } else { mfp = "n"; };
+    //        if ($("#Check_MC").is(':checked')) { mfp += "y"; } else { mfp += "n"; };
+    //        if ($("#Check_SP").is(':checked')) { mfp += "y"; } else { mfp += "n"; };
+    //        if ($("#Check_DS").is(':checked')) { mfp += "y"; } else { mfp += "n"; };
+    //        if ($("#Check_BG").is(':checked')) { mfp += "y"; } else { mfp += "n"; };
+    //        if ($("#Check_BR").is(':checked')) { mfp += "y"; } else { mfp += "n"; };
+    //        if ($("#Check_ALL").is(':checked')) { mfp += "y"; } else { mfp += "n"; };
+
+    //        if ($("#Check_AM").is(':checked')) { mfp += "y"; } else { mfp += "n"; };
+    //        if ($("#Check_GE").is(':checked')) { mfp += "y"; } else { mfp += "n"; };
+    //        if ($("#Check_AZ").is(':checked')) { mfp += "y"; } else { mfp += "n"; };
+    //        if ($("#Check_IR").is(':checked')) { mfp += "y"; } else { mfp += "n"; };
+    //        if ($("#ALL_Country").is(':checked')) { mfp += "y"; } else { mfp += "n"; };
+
+
+
+
+    //        //var r = $("#MetaData").attr('data-filter');
+    //        //alert("It Was Called By Pressing MyBasket! " + r)
+
+
+    //        //alert("It Was Called By Pressing MyBasket! :" + mfp)
+    //        var url = "/Menu/ShowBasket?mfp=" + mfp;
+    //        window.location.href = url;
+
+    //    });
+    //    return false;
+    //});
+
+
+</script>
+
+<div class="Body">
+    <div id="FilterPad" class="sticky" style="display:block; z-index:+2;">
+        <h2>Choose Meal Types and National Cuisines, To Select The Dishes</h2>
+
+        <div id="MetaData" data-filter="@Model" type="text" style="display:none;"></div>
+
+        <table class="table" style=" width:50%;">
+
+            <tr>
+                <td style="text-align:right;">
+                    <input id="Check_AM" style=" width:20px; height:20px;" type="checkbox" name="AM" value="Y">
+                </td>
+                <td style=" text-align:left; vertical-align:text-top;">
+                    <h4 style=" font-weight:bold; color:red">Armenia</h4>
+                </td>
+                <td style="text-align:right;">
+                    <input id="Check_GE" style="width:20px; height:20px;" type="checkbox" name="GE" value="Y" />
+                </td>
+                <td style=" text-align:left;">
+                    <h4 style=" font-weight:bold; color:red">Georgia</h4>
+                </td>
+                <td style=" text-align:right;">
+                    <input id="Check_AZ" style="width:20px; height:20px;" type="checkbox" name="AZ" value="Y" />
+                </td>
+                <td style=" text-align:left;">
+                    <h4 style=" font-weight:bold; color:red">Azerbaidjan</h4>
+                </td>
+                <td style=" text-align:right;">
+                    <input id="Check_IR" style="width:20px; height:20px;" type="checkbox" name="IR" value="Y" />
+                </td>
+                <td style=" text-align:left;">
+                    <h4 style=" font-weight:bold; color:red">Iran</h4>
+                </td>
+                <td style=" text-align:right;">
+                    <input id="ALL_Country" style="width:20px; height:20px;" type="checkbox" name="ACN" value="Y" />
+                </td>
+                <td style=" text-align:left;">
+                    <h4 style=" font-weight:bold; color:red">All Countries</h4>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+
+            </tr>
+            <tr>
+                <td style="text-align:right;">
+                    <input id="Check_AS" style=" width:20px; height:20px;" type="checkbox" name="AS" value="Y">
+                </td>
+                <td style=" text-align:left; vertical-align:text-top;">
+                    <h4 style=" font-weight:bold; color:red">Appetizers and Salads</h4>
+                </td>
+                <td style="text-align:right;">
+                    <input id="Check_MC" style="width:20px; height:20px;" type="checkbox" name="MC" value="Y" />
+                </td>
+                <td style=" text-align:left;">
+                    <h4 style=" font-weight:bold; color:red">Main Courses</h4>
+                </td>
+                <td style=" text-align:right;">
+                    <input id="Check_SP" style="width:20px; height:20px;" type="checkbox" name="SP" value="Y" />
+                </td>
+                <td style=" text-align:left;">
+                    <h4 style=" font-weight:bold; color:red">Soups</h4>
+                </td>
+                <td style=" text-align:right;">
+                    <input id="Check_DS" style=" width:20px; height:20px;" type="checkbox" name="DS" value="Y" />
+                </td>
+                <td style=" text-align:left;">
+                    <h4 style=" font-weight:bold; color:red">Deserts</h4>
+                </td>
+                <td style=" text-align:right;">
+                    <input id="Check_BG" style="width:20px; height:20px;" type="checkbox" name="BG" value="Y" />
+                </td>
+                <td style=" text-align:left;">
+                    <h4 style=" font-weight:bold; color:red">Beverages</h4>
+                </td>
+                <td style=" text-align:right;">
+                    <input id="Check_BR" style=" width:20px; height:20px;" type="checkbox" name="BR" value="Y" />
+
+                </td>
+                <td style=" text-align:left;">
+                    <h4 style=" font-weight:bold; color:red">Breads</h4>
+                </td>
+                <td style=" text-align:right;">
+                    <input id="Check_ALL" style="width:20px; height:20px;" type="checkbox" name="AL" value="Y" />
+                </td>
+                <td style=" text-align:left;">
+                    <h4 style=" font-weight:bold; color:red">All Types</h4>
+                </td>
+
+            </tr>
+            <tr>
+
+                <td style=" text-align:left;">
+                    @*<input id="ShowMenu" class="btn btn-md" type="submit" value="Show" style=" font-weight:bold; color:black; width:60px; padding:5px;">*@
+                    <input id="ShowInMenu" class="btn btn-md" type="submit" value="Show Dishes" style=" font-weight:bold; background-color:whitesmoke; color:black; padding:5px;" />@*Show</a>*@
+                </td>
+                <td style=" text-align:left;">
+                    <input id="CloseMenu" class="btn btn-md" type="submit" value=" Hide Dishes" style=" font-weight:bold; background-color:whitesmoke; color:black;  padding:5px;" />
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+
+        </table>
+        @*}*@
+    </div>
+    @*<meta name="my_id" content="@Model" />*@
+
+    <div id="ShowSelection" style="position:relative; display:block; ">@{Html.RenderAction("ShowMenu", "Menu"); }</div>
+
+</div>
+
+@*@Scripts.Render("~/MyScripts/SelectCountryCat.js")
+    @Scripts.Render("../MyScripts/SelectCountryCat.js")*@

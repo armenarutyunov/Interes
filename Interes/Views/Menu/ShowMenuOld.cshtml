@@ -1,0 +1,279 @@
+﻿@public System.Web.WebPages.HelperRes
+@model CountryCategories
+@{
+    ViewBag.Title = "ShowMenu";
+}
+<style>
+    body {
+        color: whitesmoke;
+    }
+</style>
+
+@*------------------------------------------------------ Helper Area Starts ------------------------------------------------------------------*@
+@helper CountryCat(IList<DBMOD.Product> plist)
+{
+
+
+    <table class="table" style="justify-content:center;">
+        <tr>
+            <th>
+                <h4><i>How It Looks</i></h4>
+            </th>
+            <th>
+                <h4><i>Meal's Name</i></h4>
+            </th>
+            <th>
+                <h4><i>Main Ingradients</i></h4>
+            </th>
+            <th>
+                <h4><i>Portion Weight<br />and Calories</i></h4>
+            </th>
+            <th>
+                <h4><i>Country</i></h4>
+            </th>
+            <th>
+                <h4><i>Portion Price</i></h4>
+            </th>
+            <th>
+                <h4><i>Number of<br />Portions</i></h4>
+            </th>
+            <th>
+                <h4><i>Action</i></h4>
+            </th>
+        </tr>
+
+        @{
+            if (plist.Count != 0)
+            {
+
+                foreach (var item in plist)
+                {
+                    Model.product = item;
+                    <tr>
+
+                        @*@using (Html.BeginForm("UpdateProduct", "Admin", new { category = @catcode }, FormMethod.Post))
+
+
+                            {@Html.AntiForgeryToken()*@
+
+                        <td>
+                            <div class="form-group">
+                                <div class="col-md-10">
+                                    @*<h5>*@
+                                    @*@Html.DisplayFor(modelItem => item.ProductTitle)*@
+                                    @Html.DisplayFor(model => model.product.ImageSrc, Model.product.ImageSrc, new { htmlAttributes = new { @class = "form-control", @style = " @*width:55px;*@ font-size:15px; height:25px;  text-align:center; padding:1px;  color:black" } })
+                                    @*@Html.ValidationMessageFor(model => model.product.ProductTitle, "", new { @class = "text-danger", @style = "color:red" })*@
+                                    @Html.HiddenFor(model => model.product.Id)
+                                    @*</h5>*@
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <div class="col-md-10">
+                                    <table >
+                                        <tr>
+                                            <td>
+                                                @Html.DisplayFor(model => model.product.ProductTitle, Model.product.ProductTitle, new { htmlAttributes = new { @class = "form-control", @style = " @*width:55px;*@ font-size:15px; height:25px;  text-align:center; padding:1px;  color:black" } })
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                @Html.DisplayFor(model => model.product.NativeTitle, Model.product.NativeTitle, new { htmlAttributes = new { @class = "form-control", @style = " @*width:55px;*@ font-size:15px; height:25px;  text-align:center; padding:1px;  color:black" } })
+                                            </td>
+                                       </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <div class="col-md-10">
+                                    @Html.DisplayFor(model => model.product.MainComponents, Model.product.MainComponents, new { htmlAttributes = new { @class = "form-control", @style = " @*width:55px;*@ font-size:15px; height:25px;  text-align:center; padding:1px;  color:black" } })
+                                    @*<h5>@Html.DisplayFor(modelItem => item.ImageSrc)</h5>*@
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <div class="col-md-10">
+                                    <table >
+                                        <tr>
+                                            <td>
+                                                @Html.DisplayFor(model => model.product.PortionWeight, Model.product.PortionWeight, new { htmlAttributes = new { @class = "form-control", @style = " @*width:55px;*@ font-size:15px; height:25px;  text-align:center; padding:1px;  color:black" } })
+                                            </td> 
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                            @Html.DisplayFor(model => model.product.CaloriesPer100g, Model.product.CaloriesPer100g, new { htmlAttributes = new { @class = "form-control", @style = " @*width:55px;*@ font-size:15px; height:25px;  text-align:center; padding:1px;  color:black" } })
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <div class="col-md-10">
+                                    @Html.DisplayFor(model => model.product.SubCategory, Model.product.Country, new { htmlAttributes = new { @class = "form-control", @style = " @*width:55px;*@ font-size:15px; height:25px;  text-align:center; padding:1px;  color:black" } })
+                                    @*<h5>@Html.DisplayFor(modelItem => item.SubCategory)</h5>*@
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <div class="col-md-10">
+                                    @*<h5>@Html.DisplayFor(modelItem => item.Country)</h5>*@
+                                    @Html.EditorFor(model => model.product.PortionPrice, Model.product.PortionPrice, new { htmlAttributes = new { @class = "form-control", @style = " @*width:55px;*@ font-size:15px; height:25px;  text-align:center; padding:1px;  color:black" } })
+                                </div>
+                            </div>
+                        </td>
+
+                        <td>
+                            @*@Html.ActionLink("Update", "UpdateProduct", "Admin", new { category = "AS" }, new { @class = "btn btn-default", @style = " width:55px; font-size:15px; height:25px;  text-align:center; padding:1px;  color: orangered", @id = "button" })*@
+                            <input type="submit" value="Number of Portions" style=" width:55px; font-size:15px; height:25px;  text-align:center; padding:1px;  color: orangered" class="btn btn-default" />
+                        </td>
+                        <td>
+                            @*<input type="submit" value="Delete" style="width:50px; font-size:15px; height:25px;  text-align:center;  padding:1px;font-weight:500; color: orange" class="btn btn-default" />*@
+                            @*<button type="submit" formaction="\Admin\Delete">Delete</button>*@
+                            @*<button class="btn btn-default" style=" width:50px; font-size:15px; height:25px;  text-align:center; padding:1px; color:orange;" onclick="location.href='@Url.Action("DeleteProduct", "Admin", new {id = Convert.ToInt32(item.Id)})'">Delete</button>*@
+                            @Html.ActionLink("Add To Bascket", "AddToBascket", "Menu", new { id = Convert.ToInt32(item.Id) }, new { @class = "btn btn-default", @style = " width:55px; font-size:15px; height:25px;  text-align:center; padding:1px;  color: orangered", @id = "button" })
+                        </td>
+
+                        @*}*@
+                    </tr>
+                }
+            }
+        }
+    </table>
+
+
+    @*@{ Model.product = new DBMOD.Product(); }*@
+
+
+}
+
+@*-------------------------------------------------------- Helper Area Ends ------------------------------------------------------------------*@
+<h2>By Choosing Cusines' Countries and Meal Types, Find Dishes You Would Might Like To Order</h2>
+
+
+<table class="table" style="  width:80%;">
+
+    <tr>
+        <td style="text-align:right;">
+            <input id="Check_AS" style=" width:20px; height:20px;" type="checkbox" name="AM" value="AM">
+        </td>
+        <td style=" text-align:left; vertical-align:text-top;">
+            <h4 style=" font-weight:bold; color:red">Armenia</h4>
+        </td>
+        <td style="text-align:right;">
+            <input id="Check_MC" style="width:20px; height:20px;" type="checkbox" name="GE" value="GE" />
+        </td>
+        <td style=" text-align:left;">
+            <h4 style=" font-weight:bold; color:red">Georgia</h4>
+        </td>
+        <td style=" text-align:right;">
+            <input id="Check_SP" style="width:20px; height:20px;" type="checkbox" name="AZ" value="AZ" />
+        </td>
+        <td style=" text-align:left;">
+            <h4 style=" font-weight:bold; color:red">Azerbaidjan</h4>
+        </td>
+        <td style=" text-align:right;">
+            <input id="Check_SP" style="width:20px; height:20px;" type="checkbox" name="IR" value="IR" />
+        </td>
+        <td style=" text-align:left;">
+            <h4 style=" font-weight:bold; color:red">Iran</h4>
+        </td>
+        <td style=" text-align:right;">
+            <input id="Check_ALL" style="width:20px; height:20px;" type="checkbox" name="ALL" value="ALL" />
+        </td>
+        <td style=" text-align:left;">
+            <h4 style=" font-weight:bold; color:red">All Countries</h4>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+
+    </tr>
+    <tr>
+        <td style="text-align:right;">
+            <input id="Check_AS" style=" width:20px; height:20px;" type="checkbox" name="AS" value="Y">
+        </td>
+        <td style=" text-align:left; vertical-align:text-top;">
+            <h4>Appetizers and Salads</h4>
+        </td>
+        <td style="text-align:right;">
+            <input id="Check_MC" style="width:20px; height:20px;" type="checkbox" name="MC" value="Y" />
+        </td>
+        <td style=" text-align:left;">
+            <h4>Main Courses</h4>
+        </td>
+        <td style=" text-align:right;">
+            <input id="Check_SP" style="width:20px; height:20px;" type="checkbox" name="SP" value="Y" />
+        </td>
+        <td style=" text-align:left;">
+            <h4>Soups</h4>
+        </td>
+        <td style=" text-align:right;">
+            <input id="Check_DS" style=" width:20px; height:20px;" type="checkbox" name="DS" value="Y" />
+        </td>
+        <td style=" text-align:left;">
+            <h4>Deserts</h4>
+        </td>
+        <td style=" text-align:right;">
+            <input id="Check_BG" style="width:20px; height:20px;" type="checkbox" name="BG" value="Y" />
+        </td>
+        <td style=" text-align:left;">
+            <h4>Beverages</h4>
+        </td>
+        <td style=" text-align:right;">
+            <input id="Check_BR" style=" width:20px; height:20px;" type="checkbox" name="BR" value="Y" />
+
+        </td>
+        <td style=" text-align:left;">
+            <h4>Breads</h4>
+        </td>
+        <td style=" text-align:right;">
+            <input id="Check_ALL" style="width:20px; height:20px;" type="checkbox" name="ALL" value="Y" />
+        </td>
+        <td style=" text-align:left;">
+            <h4>All Types</h4>
+        </td>
+
+    </tr>
+    <tr>
+
+        <td style=" text-align:left;">
+            <input id="Expand" class="btn btn-md" type="submit" value="Show" style=" font-weight:bold; color:black; width:60px; padding:5px;">
+        </td>
+        <td style=" text-align:left;">
+            <input id="Close" class="btn btn-md" type="submit" value=" Hide" style=" font-weight:bold; color:black; width:60px; padding:5px;">
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+
+
+</table>
+<div class="form-horizontal">
+    <h3 style="color:orangered"><b>Appetizers And Salads</b></h3>
+
+    @CountryCat(Model.armenia["AS"])
+    @CountryCat(Model.azerbaidjan["AS"])
+    @CountryCat(Model.georgia["AS"])
+    @CountryCat(Model.iran["AS"])
+
+    @Scripts.Render("~/MyScripts/SelectCategory.js")
+
+</div>

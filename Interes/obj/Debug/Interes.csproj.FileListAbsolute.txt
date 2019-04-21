@@ -1,0 +1,469 @@
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\ApplicationInsights.config
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\Interes.dll.config
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\Interes.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\Interes.pdb
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\csc.exe
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\csc.exe.config
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\csc.rsp
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\csi.exe
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\csi.exe.config
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\csi.rsp
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\System.AppContext.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\System.Console.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\System.Diagnostics.Process.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\System.IO.Compression.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\System.Security.Claims.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\System.Threading.Thread.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\System.ValueTuple.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\vbc.exe
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\vbc.exe.config
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\vbc.rsp
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\VBCSCompiler.exe
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\Antlr3.Runtime.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\BusinessLogic.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\DBMOD.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\EntityFramework.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\EntityFramework.SqlServer.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\EntityFrameworkDataAccess.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\Microsoft.AI.Web.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\Newtonsoft.Json.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\System.Web.Helpers.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\System.Web.Mvc.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\System.Web.Optimization.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\System.Web.Razor.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\System.Web.WebPages.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\System.Web.WebPages.Razor.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\WebGrease.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\BusinessLogic.pdb
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\BusinessLogic.dll.config
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\DBMOD.pdb
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\DBMOD.dll.config
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\EntityFrameworkDataAccess.pdb
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\EntityFrameworkDataAccess.dll.config
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\EntityFramework.xml
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\EntityFramework.SqlServer.xml
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\System.Web.Helpers.xml
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\System.Web.Mvc.xml
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\System.Web.Optimization.xml
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\System.Web.Razor.xml
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\System.Web.WebPages.xml
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\System.Web.WebPages.Razor.xml
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\Newtonsoft.Json.xml
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\Antlr3.Runtime.pdb
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\Microsoft.AI.Web.xml
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\obj\Debug\Interes.csprojAssemblyReference.cache
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\obj\Debug\Interes.csproj.CoreCompileInputs.cache
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\obj\Debug\Interes.csproj.CopyComplete
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\obj\Debug\Interes.dll
+C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\obj\Debug\Interes.pdb
+C:\ARMEN\Interes-master\Interes\bin\ApplicationInsights.config
+C:\ARMEN\Interes-master\Interes\bin\Interes.dll.config
+C:\ARMEN\Interes-master\Interes\bin\Interes.dll
+C:\ARMEN\Interes-master\Interes\bin\Interes.pdb
+C:\ARMEN\Interes-master\Interes\bin\roslyn\csc.exe
+C:\ARMEN\Interes-master\Interes\bin\roslyn\csc.exe.config
+C:\ARMEN\Interes-master\Interes\bin\roslyn\csc.rsp
+C:\ARMEN\Interes-master\Interes\bin\roslyn\csi.exe
+C:\ARMEN\Interes-master\Interes\bin\roslyn\csi.exe.config
+C:\ARMEN\Interes-master\Interes\bin\roslyn\csi.rsp
+C:\ARMEN\Interes-master\Interes\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\ARMEN\Interes-master\Interes\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\ARMEN\Interes-master\Interes\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\ARMEN\Interes-master\Interes\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\ARMEN\Interes-master\Interes\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\ARMEN\Interes-master\Interes\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\ARMEN\Interes-master\Interes\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\ARMEN\Interes-master\Interes\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\ARMEN\Interes-master\Interes\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\ARMEN\Interes-master\Interes\bin\roslyn\Microsoft.Managed.Core.targets
+C:\ARMEN\Interes-master\Interes\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\ARMEN\Interes-master\Interes\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\ARMEN\Interes-master\Interes\bin\roslyn\System.AppContext.dll
+C:\ARMEN\Interes-master\Interes\bin\roslyn\System.Collections.Immutable.dll
+C:\ARMEN\Interes-master\Interes\bin\roslyn\System.Console.dll
+C:\ARMEN\Interes-master\Interes\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\ARMEN\Interes-master\Interes\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\ARMEN\Interes-master\Interes\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\ARMEN\Interes-master\Interes\bin\roslyn\System.Globalization.Calendars.dll
+C:\ARMEN\Interes-master\Interes\bin\roslyn\System.IO.Compression.dll
+C:\ARMEN\Interes-master\Interes\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\ARMEN\Interes-master\Interes\bin\roslyn\System.IO.FileSystem.dll
+C:\ARMEN\Interes-master\Interes\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\ARMEN\Interes-master\Interes\bin\roslyn\System.Net.Http.dll
+C:\ARMEN\Interes-master\Interes\bin\roslyn\System.Net.Sockets.dll
+C:\ARMEN\Interes-master\Interes\bin\roslyn\System.Reflection.Metadata.dll
+C:\ARMEN\Interes-master\Interes\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\ARMEN\Interes-master\Interes\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\ARMEN\Interes-master\Interes\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\ARMEN\Interes-master\Interes\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\ARMEN\Interes-master\Interes\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\ARMEN\Interes-master\Interes\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\ARMEN\Interes-master\Interes\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\ARMEN\Interes-master\Interes\bin\roslyn\System.ValueTuple.dll
+C:\ARMEN\Interes-master\Interes\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\ARMEN\Interes-master\Interes\bin\roslyn\System.Xml.XmlDocument.dll
+C:\ARMEN\Interes-master\Interes\bin\roslyn\System.Xml.XPath.dll
+C:\ARMEN\Interes-master\Interes\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\ARMEN\Interes-master\Interes\bin\roslyn\vbc.exe
+C:\ARMEN\Interes-master\Interes\bin\roslyn\vbc.exe.config
+C:\ARMEN\Interes-master\Interes\bin\roslyn\vbc.rsp
+C:\ARMEN\Interes-master\Interes\bin\roslyn\VBCSCompiler.exe
+C:\ARMEN\Interes-master\Interes\bin\roslyn\VBCSCompiler.exe.config
+C:\ARMEN\Interes-master\Interes\bin\Aliencube.HtmlHelper.Extended.dll
+C:\ARMEN\Interes-master\Interes\bin\Antlr3.Runtime.dll
+C:\ARMEN\Interes-master\Interes\bin\BusinessLogic.dll
+C:\ARMEN\Interes-master\Interes\bin\DBMOD.dll
+C:\ARMEN\Interes-master\Interes\bin\EntityFramework.dll
+C:\ARMEN\Interes-master\Interes\bin\EntityFramework.SqlServer.dll
+C:\ARMEN\Interes-master\Interes\bin\EntityFrameworkDataAccess.dll
+C:\ARMEN\Interes-master\Interes\bin\FlexHtmlHelper.Mvc.dll
+C:\ARMEN\Interes-master\Interes\bin\HtmlAttributeHelper.dll
+C:\ARMEN\Interes-master\Interes\bin\HtmlRenderer.dll
+C:\ARMEN\Interes-master\Interes\bin\HtmlRenderer.WinForms.dll
+C:\ARMEN\Interes-master\Interes\bin\Microsoft.AI.Agent.Intercept.dll
+C:\ARMEN\Interes-master\Interes\bin\Microsoft.AI.DependencyCollector.dll
+C:\ARMEN\Interes-master\Interes\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\ARMEN\Interes-master\Interes\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\ARMEN\Interes-master\Interes\bin\Microsoft.AI.Web.dll
+C:\ARMEN\Interes-master\Interes\bin\Microsoft.AI.WindowsServer.dll
+C:\ARMEN\Interes-master\Interes\bin\Microsoft.ApplicationInsights.dll
+C:\ARMEN\Interes-master\Interes\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\ARMEN\Interes-master\Interes\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\ARMEN\Interes-master\Interes\bin\Microsoft.Web.Infrastructure.dll
+C:\ARMEN\Interes-master\Interes\bin\Mvc.Html.Bootstrap.dll
+C:\ARMEN\Interes-master\Interes\bin\Newtonsoft.Json.dll
+C:\ARMEN\Interes-master\Interes\bin\System.Diagnostics.DiagnosticSource.dll
+C:\ARMEN\Interes-master\Interes\bin\System.Web.Helpers.dll
+C:\ARMEN\Interes-master\Interes\bin\System.Web.Mvc.dll
+C:\ARMEN\Interes-master\Interes\bin\System.Web.Optimization.dll
+C:\ARMEN\Interes-master\Interes\bin\System.Web.Razor.dll
+C:\ARMEN\Interes-master\Interes\bin\System.Web.WebPages.Deployment.dll
+C:\ARMEN\Interes-master\Interes\bin\System.Web.WebPages.dll
+C:\ARMEN\Interes-master\Interes\bin\System.Web.WebPages.Razor.dll
+C:\ARMEN\Interes-master\Interes\bin\WebGrease.dll
+C:\ARMEN\Interes-master\Interes\bin\BusinessLogic.pdb
+C:\ARMEN\Interes-master\Interes\bin\BusinessLogic.dll.config
+C:\ARMEN\Interes-master\Interes\bin\DBMOD.pdb
+C:\ARMEN\Interes-master\Interes\bin\DBMOD.dll.config
+C:\ARMEN\Interes-master\Interes\bin\EntityFrameworkDataAccess.pdb
+C:\ARMEN\Interes-master\Interes\bin\EntityFrameworkDataAccess.dll.config
+C:\ARMEN\Interes-master\Interes\bin\Aliencube.HtmlHelper.Extended.pdb
+C:\ARMEN\Interes-master\Interes\bin\Aliencube.HtmlHelper.Extended.xml
+C:\ARMEN\Interes-master\Interes\bin\EntityFramework.xml
+C:\ARMEN\Interes-master\Interes\bin\EntityFramework.SqlServer.xml
+C:\ARMEN\Interes-master\Interes\bin\HtmlRenderer.pdb
+C:\ARMEN\Interes-master\Interes\bin\HtmlRenderer.WinForms.pdb
+C:\ARMEN\Interes-master\Interes\bin\Microsoft.AI.DependencyCollector.xml
+C:\ARMEN\Interes-master\Interes\bin\Microsoft.AI.PerfCounterCollector.xml
+C:\ARMEN\Interes-master\Interes\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\ARMEN\Interes-master\Interes\bin\Microsoft.AI.Web.xml
+C:\ARMEN\Interes-master\Interes\bin\Microsoft.AI.WindowsServer.xml
+C:\ARMEN\Interes-master\Interes\bin\Microsoft.ApplicationInsights.xml
+C:\ARMEN\Interes-master\Interes\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\ARMEN\Interes-master\Interes\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\ARMEN\Interes-master\Interes\bin\Newtonsoft.Json.pdb
+C:\ARMEN\Interes-master\Interes\bin\Newtonsoft.Json.xml
+C:\ARMEN\Interes-master\Interes\bin\System.Diagnostics.DiagnosticSource.xml
+C:\ARMEN\Interes-master\Interes\bin\System.Web.Helpers.xml
+C:\ARMEN\Interes-master\Interes\bin\System.Web.Mvc.xml
+C:\ARMEN\Interes-master\Interes\bin\System.Web.Razor.xml
+C:\ARMEN\Interes-master\Interes\bin\System.Web.WebPages.xml
+C:\ARMEN\Interes-master\Interes\bin\System.Web.WebPages.Deployment.xml
+C:\ARMEN\Interes-master\Interes\bin\System.Web.WebPages.Razor.xml
+C:\ARMEN\Interes-master\Interes\bin\System.Web.Optimization.xml
+C:\ARMEN\Interes-master\Interes\bin\Antlr3.Runtime.pdb
+C:\ARMEN\Interes-master\Interes\obj\Debug\Interes.csprojAssemblyReference.cache
+C:\ARMEN\Interes-master\Interes\obj\Debug\Interes.csproj.CoreCompileInputs.cache
+C:\ARMEN\Interes-master\Interes\obj\Debug\Interes.csproj.CopyComplete
+C:\ARMEN\Interes-master\Interes\obj\Debug\Interes.dll
+C:\ARMEN\Interes-master\Interes\obj\Debug\Interes.pdb
+D:\InteresLast\Interes\bin\ApplicationInsights.config
+D:\InteresLast\Interes\bin\Interes.dll.config
+D:\InteresLast\Interes\bin\Interes.dll
+D:\InteresLast\Interes\bin\Interes.pdb
+D:\InteresLast\Interes\bin\roslyn\csc.exe
+D:\InteresLast\Interes\bin\roslyn\csc.exe.config
+D:\InteresLast\Interes\bin\roslyn\csc.rsp
+D:\InteresLast\Interes\bin\roslyn\csi.exe
+D:\InteresLast\Interes\bin\roslyn\csi.exe.config
+D:\InteresLast\Interes\bin\roslyn\csi.rsp
+D:\InteresLast\Interes\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\InteresLast\Interes\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\InteresLast\Interes\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\InteresLast\Interes\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\InteresLast\Interes\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\InteresLast\Interes\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\InteresLast\Interes\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\InteresLast\Interes\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\InteresLast\Interes\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\InteresLast\Interes\bin\roslyn\Microsoft.Managed.Core.targets
+D:\InteresLast\Interes\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\InteresLast\Interes\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\InteresLast\Interes\bin\roslyn\System.AppContext.dll
+D:\InteresLast\Interes\bin\roslyn\System.Collections.Immutable.dll
+D:\InteresLast\Interes\bin\roslyn\System.Console.dll
+D:\InteresLast\Interes\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\InteresLast\Interes\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\InteresLast\Interes\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\InteresLast\Interes\bin\roslyn\System.Globalization.Calendars.dll
+D:\InteresLast\Interes\bin\roslyn\System.IO.Compression.dll
+D:\InteresLast\Interes\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\InteresLast\Interes\bin\roslyn\System.IO.FileSystem.dll
+D:\InteresLast\Interes\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\InteresLast\Interes\bin\roslyn\System.Net.Http.dll
+D:\InteresLast\Interes\bin\roslyn\System.Net.Sockets.dll
+D:\InteresLast\Interes\bin\roslyn\System.Reflection.Metadata.dll
+D:\InteresLast\Interes\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\InteresLast\Interes\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\InteresLast\Interes\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\InteresLast\Interes\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\InteresLast\Interes\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\InteresLast\Interes\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\InteresLast\Interes\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\InteresLast\Interes\bin\roslyn\System.ValueTuple.dll
+D:\InteresLast\Interes\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\InteresLast\Interes\bin\roslyn\System.Xml.XmlDocument.dll
+D:\InteresLast\Interes\bin\roslyn\System.Xml.XPath.dll
+D:\InteresLast\Interes\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\InteresLast\Interes\bin\roslyn\vbc.exe
+D:\InteresLast\Interes\bin\roslyn\vbc.exe.config
+D:\InteresLast\Interes\bin\roslyn\vbc.rsp
+D:\InteresLast\Interes\bin\roslyn\VBCSCompiler.exe
+D:\InteresLast\Interes\bin\roslyn\VBCSCompiler.exe.config
+D:\InteresLast\Interes\bin\Aliencube.HtmlHelper.Extended.dll
+D:\InteresLast\Interes\bin\Antlr3.Runtime.dll
+D:\InteresLast\Interes\bin\BusinessLogic.dll
+D:\InteresLast\Interes\bin\DBMOD.dll
+D:\InteresLast\Interes\bin\EntityFramework.dll
+D:\InteresLast\Interes\bin\EntityFramework.SqlServer.dll
+D:\InteresLast\Interes\bin\EntityFrameworkDataAccess.dll
+D:\InteresLast\Interes\bin\FlexHtmlHelper.Mvc.dll
+D:\InteresLast\Interes\bin\HtmlAttributeHelper.dll
+D:\InteresLast\Interes\bin\HtmlRenderer.dll
+D:\InteresLast\Interes\bin\HtmlRenderer.WinForms.dll
+D:\InteresLast\Interes\bin\Microsoft.AI.Agent.Intercept.dll
+D:\InteresLast\Interes\bin\Microsoft.AI.DependencyCollector.dll
+D:\InteresLast\Interes\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\InteresLast\Interes\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\InteresLast\Interes\bin\Microsoft.AI.Web.dll
+D:\InteresLast\Interes\bin\Microsoft.AI.WindowsServer.dll
+D:\InteresLast\Interes\bin\Microsoft.ApplicationInsights.dll
+D:\InteresLast\Interes\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\InteresLast\Interes\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\InteresLast\Interes\bin\Microsoft.Web.Infrastructure.dll
+D:\InteresLast\Interes\bin\Mvc.Html.Bootstrap.dll
+D:\InteresLast\Interes\bin\Newtonsoft.Json.dll
+D:\InteresLast\Interes\bin\System.Diagnostics.DiagnosticSource.dll
+D:\InteresLast\Interes\bin\System.Web.Helpers.dll
+D:\InteresLast\Interes\bin\System.Web.Mvc.dll
+D:\InteresLast\Interes\bin\System.Web.Optimization.dll
+D:\InteresLast\Interes\bin\System.Web.Razor.dll
+D:\InteresLast\Interes\bin\System.Web.WebPages.Deployment.dll
+D:\InteresLast\Interes\bin\System.Web.WebPages.dll
+D:\InteresLast\Interes\bin\System.Web.WebPages.Razor.dll
+D:\InteresLast\Interes\bin\WebGrease.dll
+D:\InteresLast\Interes\bin\BusinessLogic.pdb
+D:\InteresLast\Interes\bin\BusinessLogic.dll.config
+D:\InteresLast\Interes\bin\DBMOD.pdb
+D:\InteresLast\Interes\bin\DBMOD.dll.config
+D:\InteresLast\Interes\bin\EntityFrameworkDataAccess.pdb
+D:\InteresLast\Interes\bin\EntityFrameworkDataAccess.dll.config
+D:\InteresLast\Interes\bin\Aliencube.HtmlHelper.Extended.pdb
+D:\InteresLast\Interes\bin\Aliencube.HtmlHelper.Extended.xml
+D:\InteresLast\Interes\bin\EntityFramework.xml
+D:\InteresLast\Interes\bin\EntityFramework.SqlServer.xml
+D:\InteresLast\Interes\bin\HtmlRenderer.pdb
+D:\InteresLast\Interes\bin\HtmlRenderer.WinForms.pdb
+D:\InteresLast\Interes\bin\Microsoft.AI.DependencyCollector.xml
+D:\InteresLast\Interes\bin\Microsoft.AI.PerfCounterCollector.xml
+D:\InteresLast\Interes\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\InteresLast\Interes\bin\Microsoft.AI.Web.xml
+D:\InteresLast\Interes\bin\Microsoft.AI.WindowsServer.xml
+D:\InteresLast\Interes\bin\Microsoft.ApplicationInsights.xml
+D:\InteresLast\Interes\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\InteresLast\Interes\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\InteresLast\Interes\bin\Newtonsoft.Json.pdb
+D:\InteresLast\Interes\bin\Newtonsoft.Json.xml
+D:\InteresLast\Interes\bin\System.Diagnostics.DiagnosticSource.xml
+D:\InteresLast\Interes\bin\System.Web.Helpers.xml
+D:\InteresLast\Interes\bin\System.Web.Mvc.xml
+D:\InteresLast\Interes\bin\System.Web.Razor.xml
+D:\InteresLast\Interes\bin\System.Web.WebPages.xml
+D:\InteresLast\Interes\bin\System.Web.WebPages.Deployment.xml
+D:\InteresLast\Interes\bin\System.Web.WebPages.Razor.xml
+D:\InteresLast\Interes\bin\System.Web.Optimization.xml
+D:\InteresLast\Interes\bin\Antlr3.Runtime.pdb
+D:\InteresLast\Interes\obj\Debug\Interes.csprojAssemblyReference.cache
+D:\InteresLast\Interes\obj\Debug\Interes.csproj.CoreCompileInputs.cache
+D:\InteresLast\Interes\obj\Debug\Interes.csproj.CopyComplete
+D:\InteresLast\Interes\obj\Debug\Interes.dll
+D:\InteresLast\Interes\obj\Debug\Interes.pdb
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\ApplicationInsights.config
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\Interes.dll.config
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\Interes.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\Interes.pdb
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\csc.exe
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\csc.exe.config
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\csc.rsp
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\csi.exe
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\csi.exe.config
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\csi.rsp
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\Microsoft.Managed.Core.targets
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\System.AppContext.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\System.Collections.Immutable.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\System.Console.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\System.Globalization.Calendars.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\System.IO.Compression.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\System.IO.FileSystem.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\System.Net.Http.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\System.Net.Sockets.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\System.Reflection.Metadata.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\System.ValueTuple.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\System.Xml.XmlDocument.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\System.Xml.XPath.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\vbc.exe
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\vbc.exe.config
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\vbc.rsp
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\VBCSCompiler.exe
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\roslyn\VBCSCompiler.exe.config
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\Aliencube.HtmlHelper.Extended.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\Antlr3.Runtime.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\BusinessLogic.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\DBMOD.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\EntityFramework.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\EntityFramework.SqlServer.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\EntityFrameworkDataAccess.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\FlexHtmlHelper.Mvc.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\HtmlAttributeHelper.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\HtmlRenderer.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\HtmlRenderer.WinForms.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\Microsoft.AI.Agent.Intercept.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\Microsoft.AI.DependencyCollector.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\Microsoft.AI.Web.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\Microsoft.AI.WindowsServer.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\Microsoft.ApplicationInsights.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\Microsoft.Web.Infrastructure.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\Mvc.Html.Bootstrap.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\Newtonsoft.Json.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\System.Diagnostics.DiagnosticSource.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\System.Web.Helpers.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\System.Web.Mvc.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\System.Web.Optimization.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\System.Web.Razor.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\System.Web.WebPages.Deployment.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\System.Web.WebPages.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\System.Web.WebPages.Razor.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\WebGrease.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\BusinessLogic.pdb
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\BusinessLogic.dll.config
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\DBMOD.pdb
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\DBMOD.dll.config
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\EntityFrameworkDataAccess.pdb
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\EntityFrameworkDataAccess.dll.config
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\Aliencube.HtmlHelper.Extended.pdb
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\Aliencube.HtmlHelper.Extended.xml
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\EntityFramework.xml
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\EntityFramework.SqlServer.xml
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\HtmlRenderer.pdb
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\HtmlRenderer.WinForms.pdb
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\Microsoft.AI.DependencyCollector.xml
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\Microsoft.AI.PerfCounterCollector.xml
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\Microsoft.AI.Web.xml
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\Microsoft.AI.WindowsServer.xml
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\Microsoft.ApplicationInsights.xml
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\Newtonsoft.Json.pdb
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\Newtonsoft.Json.xml
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\System.Diagnostics.DiagnosticSource.xml
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\System.Web.Helpers.xml
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\System.Web.Mvc.xml
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\System.Web.Razor.xml
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\System.Web.WebPages.xml
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\System.Web.WebPages.Deployment.xml
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\System.Web.WebPages.Razor.xml
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\System.Web.Optimization.xml
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\bin\Antlr3.Runtime.pdb
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\obj\Debug\Interes.csprojAssemblyReference.cache
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\obj\Debug\Interes.csproj.CoreCompileInputs.cache
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\obj\Debug\Interes.csproj.CopyComplete
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\obj\Debug\Interes.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\Interes\obj\Debug\Interes.pdb

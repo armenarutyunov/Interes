@@ -1,0 +1,81 @@
+﻿
+#Home_Div_Text01 {
+    text-align: center;
+    /*background-image: url('../Media/imgonline-com-ua-Transparent-backgr-yN9KaoPbNK3Hi.png');
+    background-repeat: no-repeat;
+    background-size: 1250px 300px;*/
+    position:relative;
+    top: 0;
+    background-color:transparent;
+    font-family: ChristmasScript;
+    font-weight: bold;
+    font-size: 100px;
+    color: orange;/*whitesmoke*/
+    width: 1100px;
+    height: 300px;
+    border:solid;
+    border-width:1px;
+    border-color:darkorange;
+    /*padding: 60px 80px 40px 60px;*/
+    /*margin-left: -54px;*/
+}
+
+#Home_Div_Text02 {
+    /*margin-left: 100px;*/
+    display: inline-block;
+    text-align: center;
+    background-image: url('../Media/papirus_V.jpg');
+    background-repeat: no-repeat;
+    background-size:/*800px 500px;*/ 100% 100%;
+    font-family: 'Lucida Handwriting' ; /*Courier New;*/
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+    width: 800px;
+    height: 500px;
+    padding: 80px 150px 0 150px;
+}
+#Home_Div_Pic01 {
+    float: left;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    background-image: url('../Media/kind_and_grey.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#Home_Div_Pic02 {
+    width: 300px;
+    height: 400px;
+    position: relative;
+    top: 50px;
+    right:50px;
+    display: inline-block;
+    background-image: url('../Media/delivery_02.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+/*.DivForButton {
+    position: relative;
+    position: center;
+    height: 70%;
+    top: 3px;
+    border: solid;
+    border-radius: 7px;
+    border-width: 1px;
+    border-color: white;
+    text-align: center;
+}
+    .DivForButton:hover {
+        background-color: white;
+    }*/
+/*#button {
+    width: 50px;
+    font-size: 15px;
+    height: 25px;
+    text-align: center;
+    padding: 1px;
+    color: orange
+}*/

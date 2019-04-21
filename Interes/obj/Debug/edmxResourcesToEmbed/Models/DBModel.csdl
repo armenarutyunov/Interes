@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="DBModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="DBModelContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Products" EntityType="DBModel.Product" />
+    <EntitySet Name="Orders" EntityType="DBModel.Order" />
+    <EntitySet Name="Security_Logins" EntityType="DBModel.Security_Login" />
+    <EntitySet Name="Customers" EntityType="DBModel.Customer" />
+    <EntitySet Name="OrderDetails" EntityType="DBModel.OrderDetail" />
+    <AssociationSet Name="CustomerSecurity_Login" Association="DBModel.CustomerSecurity_Login">
+      <End Role="Customer" EntitySet="Customers" />
+      <End Role="Security_Login" EntitySet="Security_Logins" />
+    </AssociationSet>
+    <AssociationSet Name="CustomerOrder" Association="DBModel.CustomerOrder">
+      <End Role="Customer" EntitySet="Customers" />
+      <End Role="Order" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="OrderOrderDetail" Association="DBModel.OrderOrderDetail">
+      <End Role="Order" EntitySet="Orders" />
+      <End Role="OrderDetail" EntitySet="OrderDetails" />
+    </AssociationSet>
+    <AssociationSet Name="ProductOrderDetail" Association="DBModel.ProductOrderDetail">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="OrderDetail" EntitySet="OrderDetails" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductTitle" Type="String" Nullable="false" />
+    <Property Name="NativeTitle" Type="String" Nullable="false" />
+    <Property Name="ImageSrc" Type="String" Nullable="false" />
+    <Property Name="Category" Type="String" Nullable="false" />
+    <Property Name="SubCategory" Type="String" Nullable="false" />
+    <Property Name="Country" Type="String" Nullable="false" />
+    <Property Name="PortionPrice" Type="String" Nullable="false" />
+    <Property Name="CaloriesPer100g" Type="String" Nullable="false" />
+    <Property Name="PortionWeight" Type="String" Nullable="false" />
+    <Property Name="MainComponents" Type="String" Nullable="false" />
+    <Property Name="CookingRecipe" Type="String" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OrderDate" Type="String" Nullable="false" />
+    <Property Name="ProductCost" Type="String" Nullable="false" />
+    <Property Name="DeliveryCost" Type="String" Nullable="false" />
+    <Property Name="TotalHST" Type="String" Nullable="false" />
+    <Property Name="TotalCost" Type="String" Nullable="false" />
+    <Property Name="City" Type="String" Nullable="false" />
+    <Property Name="Street" Type="String" Nullable="false" />
+    <Property Name="HomeNumber" Type="String" Nullable="false" />
+    <Property Name="UnitNumber" Type="String" Nullable="false" />
+    <Property Name="PostalCode" Type="String" Nullable="false" />
+    <NavigationProperty Name="Customer" Relationship="DBModel.CustomerOrder" FromRole="Order" ToRole="Customer" />
+    <Property Name="CustomerId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Security_Login">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Email" Type="String" Nullable="false" />
+    <Property Name="Password" Type="String" Nullable="false" />
+    <Property Name="RegistrationDate" Type="String" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" Nullable="false" />
+    <Property Name="LastName" Type="String" Nullable="false" />
+    <Property Name="Phone" Type="String" Nullable="false" />
+    <NavigationProperty Name="Security_Login" Relationship="DBModel.CustomerSecurity_Login" FromRole="Customer" ToRole="Security_Login" />
+  </EntityType>
+  <EntityType Name="OrderDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PortionsQuantity" Type="String" Nullable="false" />
+    <NavigationProperty Name="Order" Relationship="DBModel.OrderOrderDetail" FromRole="OrderDetail" ToRole="Order" />
+    <Property Name="OrderId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Product" Relationship="DBModel.ProductOrderDetail" FromRole="OrderDetail" ToRole="Product" />
+    <Property Name="ProductId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <Association Name="CustomerSecurity_Login">
+    <End Type="DBModel.Customer" Role="Customer" Multiplicity="1" />
+    <End Type="DBModel.Security_Login" Role="Security_Login" Multiplicity="1" />
+  </Association>
+  <Association Name="CustomerOrder">
+    <End Type="DBModel.Customer" Role="Customer" Multiplicity="1" />
+    <End Type="DBModel.Order" Role="Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="OrderOrderDetail">
+    <End Type="DBModel.Order" Role="Order" Multiplicity="1" />
+    <End Type="DBModel.OrderDetail" Role="OrderDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Order">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OrderDetail">
+        <PropertyRef Name="OrderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ProductOrderDetail">
+    <End Type="DBModel.Product" Role="Product" Multiplicity="1" />
+    <End Type="DBModel.OrderDetail" Role="OrderDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OrderDetail">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
