@@ -46,7 +46,7 @@
                                     <div class="DivForButton"><a href="/Login/AdminSignOut" class="btn btn-md" style="font-weight:bold; font-size:20px;color:darkorange;">Sign Out</a></div>
                                 </li>
                             }
-                            else if (string.IsNullOrEmpty(Model.Customer[0]))
+                            else if (string.IsNullOrEmpty(Model.Customer[1]))
                             {
                                 <li>&nbsp;</li>
                                 <li>
@@ -61,7 +61,7 @@
                             {
                                 <li>&nbsp;</li>
                                 <li>
-                                    <a href="/" class="btn btn-md" style="font-weight:bold; font-size:20px;color:orangered; border:none;">@Model.Customer[0]</a>
+                                    <a href="/Login/CustPage" class="btn btn-md" style="font-weight:bold; font-size:20px;color:orangered; border:none;">@Model.Customer[1] @Model.Customer[2]</a>
                                 </li>
                                 <li>&nbsp;</li>
                                 <li>

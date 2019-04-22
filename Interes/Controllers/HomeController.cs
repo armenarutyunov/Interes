@@ -16,7 +16,7 @@ namespace Interes.Controllers
         public static bool isadmin = false;
         public static BasketGroup bsg = new BasketGroup();
         public static string MenuFilterPad = "nnnnnnnnnnnn";
-        public static string[] customer = new string[] {null,null,null,"1"};
+        public static string[] customer = new string[] {"1", null, null, null, "1", null, null, null};
         public static List<string> addresses = new List<string>() { " -- Your Previous Addresses --" };
         //public MenuData MD { get { return menudata; } }
         //public void AdminStat(bool q)

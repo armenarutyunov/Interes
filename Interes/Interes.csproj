@@ -310,8 +310,6 @@
     <Content Include="Views\Menu\ItemsInBasket.cshtml" />
     <Content Include="Views\Menu\AddToBasket - Copy.cshtml" />
     <Content Include="Views\Menu\AddToBasket.cshtml" />
-    <Content Include="Views\Shared\_Layout_Checkout_Nav .cshtml" />
-    <Content Include="Views\Shared\_Layout_Checkout.cshtml" />
     <Content Include="Views\Checkout\OrderDetails.cshtml" />
     <Content Include="Views\Checkout\BasketContents.cshtml" />
     <Content Include="Views\Checkout\CostBreakdown.cshtml" />
@@ -324,6 +322,8 @@
     <Content Include="Views\Login\LoginOld.cshtml" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
+    <Content Include="Views\Shared\_Layout_Checkout_Nav.cshtml" />
+    <Content Include="Views\Login\CustPage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

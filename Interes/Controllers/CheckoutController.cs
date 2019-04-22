@@ -40,16 +40,16 @@ namespace Interes.Controllers
         {
             //BasketGroup bg = HomeController.bsg;
             OrderDetails bg = new OrderDetails();
-            bg.Name = HomeController.customer[0];
-            bg.Phone = HomeController.customer[1];
-            bg.Email = HomeController.customer[2];
-            int casid = Convert.ToInt32(HomeController.customer[3]);
+            bg.Name = HomeController.customer[1]+" "+ HomeController.customer[2];
+            bg.Phone = HomeController.customer[3];
+            bg.Email = HomeController.customer[5];
 
-            List<Order> od_list = o_logic.GetList(a => a.CustomerId == casid).ToList();
-            //List<Order> od_list = od_logic.GetList(a => a.CustomerId == casid).ToList();
+            int cusid = Convert.ToInt32(HomeController.customer[0]);
             HomeController.addresses = new List<string>() { " -- Your Previous Addresses --" };
-            if (casid != 1)
+            if (cusid > 1)
             {
+                List<Order> od_list = o_logic.GetList(a => a.CustomerId == cusid).ToList(); 
+          
                 foreach (var rec in od_list)
                 {
                     HomeController.addresses.Add(rec.Street + ", " + rec.UnitNumber + ", " + rec.City + ", " + rec.PostalCode);

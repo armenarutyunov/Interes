@@ -24,8 +24,9 @@ namespace Interes.Models
         [RegularExpression(@"^[\w-\._\+%]+@(?:[\w-]+\.)+[\w]{2,6}$", ErrorMessage = "Email address is not valid")]
         public string Email { get; set; }
 
-        [Required(ErrorMessage = "Password is required")]
-        [RegularExpression(@"^((?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_]).{6,50})$", ErrorMessage = "Password is not valid")]
+        [Required(ErrorMessage = @"Password is required")]
+        [RegularExpression(@"^((?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_]).{6,50})$", 
+        ErrorMessage = "Password requires at least 1 lowercase character, 1 uppercase character, 1 number, 1 special character and must contain at least 6 characters")]
         public string Password { get; set; }
 
     }

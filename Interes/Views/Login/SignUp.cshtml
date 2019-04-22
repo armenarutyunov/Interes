@@ -46,7 +46,7 @@
                 <div class="form-group">
                     <div class="col-lg" style=" border:solid; border:4px; border-color:red">
                         <h3 style="color:darkorange;">First Name</h3>
-                        @Html.EditorFor(model => model.FirstName, new { htmlAttributes = new { @class = "ODInputField", @style = "width:30em; padding-left:0.5em;" } })<br />
+                        @Html.EditorFor(model => model.FirstName, new { htmlAttributes = new { @class = "form-control", @style = "width:25em; padding-left:0.5em;"  } })<br />
                         @Html.ValidationMessageFor(model => model.FirstName, "", new { @class = "text-danger", @style = "color:yellow" })
                     </div>
                 </div>
@@ -55,7 +55,7 @@
                 <div class="form-group">
                     <div class="col-lg" style=" border:solid; border:4px; border-color:red">
                         <h3 style="color:darkorange;">Last Name</h3>
-                        @Html.EditorFor(model => model.LastName, new { htmlAttributes = new { @class = "ODInputField", @style = "width:30em; padding-left:0.5em;" } })<br />
+                        @Html.EditorFor(model => model.LastName, new { htmlAttributes = new { @class = "form-control", @style = "width:25em; padding-left:0.5em;" } })<br />
                         @Html.ValidationMessageFor(model => model.LastName, "", new { @class = "text-danger", @style = "color:yellow" })
                     </div>
                 </div>
@@ -67,7 +67,7 @@
 
                     <div class="col-lg" style=" border:solid; border:4px; border-color:red">
                         <h3 style="color:darkorange;">Contact Phone</h3>
-                        @Html.EditorFor(model => model.Phone, new { htmlAttributes = new { @class = "ODInputField", @style = "width:30em; padding-left:0.5em;" } })<br />
+                        @Html.EditorFor(model => model.Phone, new { htmlAttributes = new {@class = "form-control", @style = "width:25em; padding-left:0.5em;" } })<br />
                         @Html.ValidationMessageFor(model => model.Phone, "", new { @class = "text-danger", @style = "color:yellow" })
                     </div>
                 </div>
@@ -76,7 +76,7 @@
                 <div class="form-group">
                     <div class="col-lg" style=" border:solid; border:4px; border-color:red">
                         <h3 style="color:darkorange;">Email Address</h3>
-                        @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "ODInputField", @style = "width:30em; padding-left:0.5em;" } })<br />
+                        @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", @style = "width:25em; padding-left:0.5em;" } })<br />
                         @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger", @style = "color:yellow" })
                     </div>
                 </div>
@@ -87,7 +87,7 @@
                 <div class="form-group">
                     <div class="col-lg" style=" border:solid; border:4px; border-color:red">
                         <h3 style="color:darkorange;">Password</h3>
-                        @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "ODInputField", @style = "width:30em; padding-left:0.5em;" } })<br />
+                        @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control", @style = "width:25em; padding-left:0.5em;"  } })<br />
                         @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger", @style = "color:yellow" })
                     </div>
                 </div>

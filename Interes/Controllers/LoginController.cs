@@ -70,7 +70,7 @@ namespace Interes.Controllers
         {
             HomeController.bsg = new BasketGroup();
             HomeController.MenuFilterPad = "nnnnnnnnnnnn";
-            HomeController.customer = new string[] { null, null, null, "0" };
+            HomeController.customer = new string[] { "1", null, null, null, "1", null, null, null };
             HomeController.addresses = new List<string>() { " -- Your Previous Addresses --" };
             return RedirectToAction("Home", "Home");
 
@@ -110,14 +110,17 @@ namespace Interes.Controllers
                         ViewBag.HasAccount = true;
                         ViewBag.Status = "Logged";
 
-                        int SecLogId = item.Id;
-                        Customer cas = cm_logic.GetList(a => a.Security_Login_Id == SecLogId).FirstOrDefault();
-                        HomeController.customer[0] = cas.FirstName + " " + cas.LastName;
-                        HomeController.customer[1] = cas.Phone;
-                        HomeController.customer[2] = item.Email;
-                        HomeController.customer[3] = cas.Id.ToString();
+                        //int SecLogId = item.Id;
+                        Customer cus = cm_logic.GetList(a => a.Security_Login_Id == item.Id).FirstOrDefault();
 
-                       
+                        HomeController.customer[0] = cus.Id.ToString();
+                        HomeController.customer[1] = cus.FirstName;
+                        HomeController.customer[2] = cus.LastName;
+                        HomeController.customer[3] = cus.Phone;
+                        HomeController.customer[4] = item.Id.ToString();
+                        HomeController.customer[5] = item.Email;
+                        HomeController.customer[6] = item.Password;
+
                         return RedirectToAction("Home", "Home");
                         //return RedirectToAction("Index","Home", new { q = true });
                     }
@@ -160,6 +163,38 @@ namespace Interes.Controllers
             TempData["Message"] = "Congratulations, you have registered successfully!";
             return RedirectToAction("Message");
         }
-       
+        //public ActionResult CusPage()
+        //{
+        //    OrderDetails bg = new OrderDetails();
+        //    bg.Name = HomeController.customer[0];
+        //    bg.Phone = HomeController.customer[1];
+        //    bg.Email = HomeController.customer[2];
+        //    int cusid = Convert.ToInt32(HomeController.customer[3]);
+
+        //    List<Order> od_list = o_logic.GetList(a => a.CustomerId == cusid).ToList();
+        //    //List<Order> od_list = od_logic.GetList(a => a.CustomerId == cusid).ToList();
+        //    HomeController.addresses = new List<string>() { " -- Your Previous Addresses --" };
+        //    if (cusid != 1)
+        //    {
+        //        foreach (var rec in od_list)
+        //        {
+        //            HomeController.addresses.Add(rec.Street + ", " + rec.UnitNumber + ", " + rec.City + ", " + rec.PostalCode);
+        //        }
+        //    }
+        //    bg.Addresses = HomeController.addresses.Distinct().ToList();
+        //    bg.DeliveryDate = DateTime.Now.AddDays(1).Date;
+        //    bg.DeliveryTime = DateTime.Now.AddHours(12);
+        //    return View(bg);
+        //}
+        public ActionResult CustPage()
+        {
+            SignUpData sud = new SignUpData();
+            sud.FirstName = HomeController.customer[1];
+            sud.LastName = HomeController.customer[2];
+            sud.Phone = HomeController.customer[3];
+            sud.Email = HomeController.customer[5];
+            
+            return View(sud);
+        }
     }
-}
+} 

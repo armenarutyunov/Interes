@@ -1,6 +1,6 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,29 +10,23 @@
 
     <script>window.jQuery || document.write('<script src="~JQUERY/jquery-3.3.1.js"><\/script>');</script>
 
-    @*@Scripts.Render("~/MyScripts/SelectCategory.js")*@
-    @*@Scripts.Render("~/MyScripts/SelectCountryCat.js")
-        @Scripts.Render("../MyScripts/SelectCountryCat.js")*@
 
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-    @Styles.Render("~/Content/Home.css")
-    @*@Styles.Render("~/Content/Home.css")*@
+  
 
     <style>
         body {
-            /*background-image: repeating-linear-gradient(90deg,white 1%,grey 2% );*/ /*,green 3%*/
-            /*background-image: url('../Media/Login-Background-Eastern.jpg');*/
-            /*background-repeat: no-repeat;*/
+            color:whitesmoke;
             background-image: url('../Media/Login-Background-Black.jpg');
             background-attachment: fixed;
         }
 
         .DivForButton {
-            position: absolute;
-            /*position: center;*/
+            position: relative;
+            position: center;
             height: 70%;
-            top: 4px;
+            /*top: 3px;*/
             border: solid;
             border-radius: 7px;
             border-width: 1px;
@@ -43,32 +37,49 @@
             .DivForButton:hover {
                 background-color: white;
             }
+
+              #SubmitBtn {
+            border: solid;
+            border-width: 2px;
+            border-color: whitesmoke;
+            border-radius: 7px;
+            background-color: black;
+            color: darkorange;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+            #SubmitBtn:hover {
+                background-color: white;
+            }
         .DivForElement {
             position: relative;
             position: center;
             height: 70%;
-            top: 0px;
+            /*top: 0px;*/
             color: whitesmoke;
             text-align: center;
         }
-        .DivForImg {
-            position: relative;
-            position: center;
-            height: 70%;
-            top: 3px;
-            /*border: solid;
-            border-radius: 7px;
-            border-width: 1px;
-            border-color: white;*/
-            text-align: left;
+        .LableCustPage{
+           
+            color: darkorange;
+             font-weight: bold;
+             font-size: 1.5em;
+             padding-bottom:0.7em;
         }
     </style>
 </head>
 <body>
 
-    @{Html.RenderAction("NavForBasket", "Home");}
+    @{Html.RenderAction("NavForCheckout", "Home");}
+    @*@Html.Action("NavForStart", "Home")*@
+
     <div class="container body-content">
         @RenderBody()
+        @*<hr />
+            <footer>
+                <p>&copy; @DateTime.Now.Year  A&AA Production inc.</p>
+            </footer>*@
     </div>
 
     @Scripts.Render("~/bundles/jquery")
