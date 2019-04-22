@@ -1,4 +1,4 @@
-This repository contains ASP.NET MVC application which servicing online restaurant of eastern cuisine. Service provided by this application allows to: 
+This repository contains ASP.NET MVC application which is servicing online restaurant of eastern cuisine. Service provided by this application allows to: 
 a. Set up the filter to choose meal's categories and specify the countries of origin of the dishes
 b. Make a selection of dishes and therefore set up your basket 
 c. Work with a created basket to remove some items or change quantities of them 
