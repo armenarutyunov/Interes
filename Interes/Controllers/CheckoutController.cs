@@ -109,7 +109,7 @@ namespace Interes.Controllers
             //order.HomeNumber = (string.IsNullOrEmpty(obj.HomeNumber)) ? "Not Provided" : obj.HomeNumber;
             order.UnitNumber = (string.IsNullOrEmpty(obj.UnitApt)) ? "N/A" : obj.UnitApt;
             order.PostalCode = (string.IsNullOrEmpty(obj.PostalCode)) ? "Not Provided" : obj.PostalCode;
-            order.CustomerId = Convert.ToInt32(HomeController.customer[3]);
+            order.CustomerId = Convert.ToInt32(HomeController.customer[0]);
             order.HomeNumber = obj.Phone;
             Order[] olist = new Order[] { order };
             //try

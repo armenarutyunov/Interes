@@ -1,0 +1,102 @@
+﻿@model  Interes.Models.BasketGroup
+@{
+    ViewBag.Title = "TestPage";
+    Layout = "~/Views/Shared/_Layout_Basket_Nav.cshtml";
+}
+<style>
+    body {
+        color: whitesmoke;
+    }
+
+    /*.btn-md {
+        color: darkorange;
+        background-color: transparent;
+        text-decoration: none;
+        border: solid;
+        border-color: whitesmoke;
+        border-width: 1px;
+        font-weight: bold;
+        font-size: 0.8em;
+    }*/
+    /*.DivForRemove {
+        position: relative;
+        height: 60%;
+        font-weight: bold;
+        border: none;
+        border-radius: 7px;
+        border-width: 2px;
+        border-color: white;
+        text-align: center;
+    }*/
+    /*.DivForRemove:hover {
+       
+       background-color:whitesmoke;
+      color:darkred;
+    }*/
+   
+</style>
+<br />
+<h2>Your Basket</h2>
+<br />
+<table class="table" style="width:60%; font-size:medium;">
+    <theader>
+        <tr>
+            <th class="col-xs-2">
+                Title
+            </th>
+            <th class="col-xs-1">
+                Quantity
+            </th>
+            <th class="col-xs-2">
+                Item Price
+            </th>
+            <th class="col-xs-1" style="text-align:right;">
+                Subtotal
+            </th>
+            <th class="col-xs-1" style="text-align:left;">
+                Remove
+            </th>
+        </tr>
+    </theader>
+    <tbody>
+        @foreach (var rec in Model.Records)
+        {
+            using (Html.BeginForm("UpdateQty", "Menu", new { id = rec.Product.Id }, FormMethod.Post))
+            {@Html.AntiForgeryToken()
+            <tr>
+                <th>
+                    @rec.Product.ProductTitle
+                </th>
+                <th class="text-left">
+                    <input onblur="submit();" name="quantity" class="QtyBtn" value="@rec.Quantity" style="width:30%; height:80%; color:black; text-align:center; " />
+                </th>
+                <th>
+                    @rec.Product.PortionPrice
+                </th>
+                <th class="text-right">
+                    @((Convert.ToDouble(rec.Product.PortionPrice) * rec.Quantity).ToString("####.##")) $
+                </th>
+                <th>
+    @Html.ActionLink("Remove", "RemoveFromBasket", "Menu", new { id = rec.Product.Id }, new { @id = "RemoveBtn" })
+                </th>
+            </tr>}
+    }
+    </tbody>
+    <tfoot>
+        <tr>
+            <th colspan="2" class="text-left">
+
+                <a href="/Menu/CleaUpBasket" id="CleanBasketBtn" class="btn btn-group-sm">Clean Basket</a>
+
+            </th>
+            <th class="text-left">
+                Total:
+            </th>
+            <th class="text-right">
+                @Model.BasketTotal().ToString() $
+            </th>
+            <th>
+            </th>
+        </tr>
+    </tfoot>
+</table>

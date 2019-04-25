@@ -30,3 +30,19 @@ C:\ARMEN\Interes-master\BusinessLogic\obj\Debug\BusinessLogic.csproj.CoreCompile
 C:\ARMEN\Interes-master\BusinessLogic\obj\Debug\BusinessLogic.csproj.CopyComplete
 C:\ARMEN\Interes-master\BusinessLogic\obj\Debug\BusinessLogic.dll
 C:\ARMEN\Interes-master\BusinessLogic\obj\Debug\BusinessLogic.pdb
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\BusinessLogic\bin\Debug\BusinessLogic.dll.config
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\BusinessLogic\bin\Debug\BusinessLogic.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\BusinessLogic\bin\Debug\BusinessLogic.pdb
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\BusinessLogic\bin\Debug\DBMOD.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\BusinessLogic\bin\Debug\EntityFrameworkDataAccess.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\BusinessLogic\bin\Debug\EntityFramework.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\BusinessLogic\bin\Debug\DBMOD.pdb
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\BusinessLogic\bin\Debug\DBMOD.dll.config
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\BusinessLogic\bin\Debug\EntityFrameworkDataAccess.pdb
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\BusinessLogic\bin\Debug\EntityFrameworkDataAccess.dll.config
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\BusinessLogic\bin\Debug\EntityFramework.xml
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\BusinessLogic\obj\Debug\BusinessLogic.csprojAssemblyReference.cache
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\BusinessLogic\obj\Debug\BusinessLogic.csproj.CoreCompileInputs.cache
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\BusinessLogic\obj\Debug\BusinessLogic.csproj.CopyComplete
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\BusinessLogic\obj\Debug\BusinessLogic.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\BusinessLogic\obj\Debug\BusinessLogic.pdb

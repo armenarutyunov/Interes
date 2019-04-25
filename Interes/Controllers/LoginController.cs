@@ -18,11 +18,12 @@ namespace Interes.Controllers
         EFGenericRepository<Customer> cm_repo = new EFGenericRepository<Customer>();
         private CustomerLogic cm_logic;
         RestaurantEntities re = new RestaurantEntities();
+        //string TempData["msgUpDec"];
         public LoginController()
         {
             sl_logic = new Security_LoginsLogic(sl_repo);
             cm_logic = new CustomerLogic(cm_repo);
-
+            TempData["msgUpDec"] = "";
         }
         // GET: Login
         public ActionResult Admin()
@@ -163,29 +164,7 @@ namespace Interes.Controllers
             TempData["Message"] = "Congratulations, you have registered successfully!";
             return RedirectToAction("Message");
         }
-        //public ActionResult CusPage()
-        //{
-        //    OrderDetails bg = new OrderDetails();
-        //    bg.Name = HomeController.customer[0];
-        //    bg.Phone = HomeController.customer[1];
-        //    bg.Email = HomeController.customer[2];
-        //    int cusid = Convert.ToInt32(HomeController.customer[3]);
-
-        //    List<Order> od_list = o_logic.GetList(a => a.CustomerId == cusid).ToList();
-        //    //List<Order> od_list = od_logic.GetList(a => a.CustomerId == cusid).ToList();
-        //    HomeController.addresses = new List<string>() { " -- Your Previous Addresses --" };
-        //    if (cusid != 1)
-        //    {
-        //        foreach (var rec in od_list)
-        //        {
-        //            HomeController.addresses.Add(rec.Street + ", " + rec.UnitNumber + ", " + rec.City + ", " + rec.PostalCode);
-        //        }
-        //    }
-        //    bg.Addresses = HomeController.addresses.Distinct().ToList();
-        //    bg.DeliveryDate = DateTime.Now.AddDays(1).Date;
-        //    bg.DeliveryTime = DateTime.Now.AddHours(12);
-        //    return View(bg);
-        //}
+       
         public ActionResult CustPage()
         {
             SignUpData sud = new SignUpData();
@@ -193,8 +172,60 @@ namespace Interes.Controllers
             sud.LastName = HomeController.customer[2];
             sud.Phone = HomeController.customer[3];
             sud.Email = HomeController.customer[5];
-            
+            sud.Password = HomeController.customer[6];
+            if (string.IsNullOrEmpty((string)TempData["msgUpDec"])){ ViewBag.msgUpDec = ""; }
+            else { ViewBag.msgUpDec = TempData["msgUpDec"].ToString(); }
             return View(sud);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Update(SignUpData sud)
+        {
+
+            //if (ModelState.IsValid)
+            //{
+
+                int slid = Convert.ToInt32(HomeController.customer[4]);
+                Security_Logins sl = sl_logic.GetList(a => a.Id == slid).FirstOrDefault();
+                sl.Email = sud.Email;
+                HomeController.customer[5] = sud.Email;
+                Security_Logins[] sllist = new Security_Logins [] { sl };
+                sl_logic.Update(sllist);
+
+                int cmid = Convert.ToInt32(HomeController.customer[0]);
+                Customer cm = cm_logic.GetList(a => a.Id == cmid).FirstOrDefault();
+                cm.FirstName = sud.FirstName; cm.LastName = sud.LastName; cm.Phone = sud.Phone;
+                HomeController.customer[1] = sud.FirstName;
+                HomeController.customer[2] = sud.LastName;
+                HomeController.customer[3] = sud.Phone;
+                Customer[] cuslist = new Customer[] { cm };
+                cm_logic.Update(cuslist);
+
+
+               TempData["msgUpDec"] = "Your personal data were updated successfully!";
+
+                return RedirectToAction("CustPage");
+
+            //}
+            //ViewBag.msgUpDec = "Looks, that you have entered inappropriate data. Re-enter and submit again.";
+            //return RedirectToAction("CustPage");
+        }
+        public ActionResult UpdatePassword(SignUpData sud, string CurPass)
+        {
+            if (CurPass == HomeController.customer[6])
+            {
+                int slid = Convert.ToInt32(HomeController.customer[4]);
+                Security_Logins sl = sl_logic.GetList(a => a.Id == slid).FirstOrDefault();
+                sl.Password = sud.Password;
+                Security_Logins[] sllist = new Security_Logins[] { sl };
+                sl_logic.Update(sllist);
+                HomeController.customer[6] = sud.Password;
+
+                TempData["msgUpDec"] = "Your password has been updated successfully!";
+                return RedirectToAction("CustPage");
+            }
+            TempData["msgUpDec"] = "Your current password is incorrect. Please, try again!";
+            return RedirectToAction("CustPage");
         }
     }
 } 

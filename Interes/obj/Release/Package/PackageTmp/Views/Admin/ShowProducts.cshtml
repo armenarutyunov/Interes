@@ -1,0 +1,476 @@
+﻿@using Interes.Models
+@model ProductsCategories
+@{
+    Layout = "~/Views/Shared/_Layout_Admin.cshtml";
+}
+<style>
+    body {
+        color: whitesmoke;
+    }
+    #Expand {
+        color: orangered;
+        background-color: transparent;
+        text-decoration: none;
+        border: solid;
+        border-color: whitesmoke;
+        border-width: 1px;
+        font-weight: bold;
+    }
+
+        #Expand:hover {
+            color: orangered;
+            background-color: whitesmoke;
+        }
+    #Close {
+        color: orangered;
+        background-color: transparent;
+        text-decoration: none;
+        border: solid;
+        border-color: whitesmoke;
+        border-width: 1px;
+        font-weight: bold;
+    }
+
+        #Close:hover {
+            color: orangered;
+            background-color: whitesmoke;
+        }
+    #DeleteBtn {
+        color: orangered;
+        background-color: transparent;
+        text-decoration: none;
+        border: solid;
+        border-color: whitesmoke;
+        border-width: 1px;
+        font-weight:bold;
+    }
+  
+    #DeleteBtn:hover {
+        color: orangered;
+        background-color: whitesmoke;
+    }
+    .btn {
+        color: orangered;
+        background-color: transparent;
+        text-decoration: none;
+        border: solid;
+        border-color: whitesmoke;
+        border-width: 1px;
+        font-weight: bold;
+    }
+
+        .btn:hover {
+            color: orangered;
+            background-color: whitesmoke;
+        }
+</style>
+
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", Checkboxes);
+    function Checkboxes(){
+
+        if (sessionStorage.getItem("as") == "checked") { $("#Check_AS").prop('checked', true); } else { $("#Check_AS").prop('checked', false); };
+        if (sessionStorage.getItem("mc") == "checked") { $("#Check_MC").prop('checked', true); } else { $("#Check_MC").prop('checked', false); };
+        if (sessionStorage.getItem("sp") == "checked") { $("#Check_SP").prop('checked', true); } else { $("#Check_SP").prop('checked', false); };
+        if (sessionStorage.getItem("ds") == "checked") { $("#Check_DS").prop('checked', true); } else { $("#Check_DS").prop('checked', false); };
+        if (sessionStorage.getItem("bg") == "checked") { $("#Check_BG").prop('checked', true); } else { $("#Check_BG").prop('checked', false); };
+        if (sessionStorage.getItem("br") == "checked") { $("#Check_BR").prop('checked', true); } else { $("#Check_BR").prop('checked', false); };
+        if (sessionStorage.getItem("al") == "checked") { $("#Check_ALL").prop('checked', true); } else { $("#Check_ALL").prop('checked', false); };
+
+        
+
+        if ($("#Check_AS").is(':checked')) { $("#Show_AS").css("display", "block"); } else { $("#Show_AS").css("display", "none"); };
+        if ($("#Check_MC").is(':checked')) { $("#Show_MC").css("display", "block"); } else { $("#Show_MC").css("display", "none"); };
+        if ($("#Check_SP").is(':checked')) { $("#Show_SP").css("display", "block"); } else { $("#Show_SP").css("display", "none"); };
+        if ($("#Check_DS").is(':checked')) { $("#Show_DS").css("display", "block"); } else { $("#Show_DS").css("display", "none"); };
+        if ($("#Check_BG").is(':checked')) { $("#Show_BG").css("display", "block"); } else { $("#Show_BG").css("display", "none"); };
+        if ($("#Check_BR").is(':checked')) { $("#Show_BR").css("display", "block"); } else { $("#Show_BR").css("display", "none"); };
+    }
+
+    $().ready(function () {
+
+        $('.btn').on("click", GrabStates);
+           
+
+    });
+
+    function GrabStates(){
+
+        var _as = ""; var _mc = ""; var _sp = ""; var _ds = ""; var _bg = ""; var _br = ""; var _al = "";
+        if ($("#Check_AS").is(':checked')) { _as = "checked"; }
+        if ($("#Check_MC").is(':checked')) { _mc = "checked"; }
+        if ($("#Check_SP").is(':checked')) { _sp = "checked"; }
+        if ($("#Check_DS").is(':checked')) { _ds = "checked"; }
+        if ($("#Check_BG").is(':checked')) { _bg = "checked"; }
+        if ($("#Check_BR").is(':checked')) { _br = "checked"; }
+        if ($("#Check_ALL").is(':checked')) { _al = "checked"; }
+
+        sessionStorage.setItem("as", _as);
+        sessionStorage.setItem("mc", _mc);
+        sessionStorage.setItem("sp", _sp);
+        sessionStorage.setItem("ds", _ds);
+        sessionStorage.setItem("bg", _bg);
+        sessionStorage.setItem("br", _br);
+        sessionStorage.setItem("al", _al);
+
+
+    };
+
+</script>
+
+@helper ProCat(string fullcat, string catcode, IList<DBMOD.Product> plist)
+{
+    <div class="form-horizontal">
+        <h3 style="color:orangered"><b>@fullcat</b></h3>
+
+        <table class="table" style="justify-content:center;">
+            <tr>
+                <th>
+                    <h4><i>TitleEnglish</i></h4>
+                </th>
+                <th>
+                    <h4><i>TitleNative</i></h4>
+                </th>
+                <th>
+                    <h4><i>ImageSrc</i></h4>
+                </th>
+                <th>
+                    <h4><i>SubCategory</i></h4>
+                </th>
+                <th>
+                    <h4><i>Country</i></h4>
+                </th>
+                <th>
+                    <h4><i>Weight</i></h4>
+                </th>
+                <th>
+                    <h4><i>Cal100g</i></h4>
+                </th>
+                <th>
+                    <h4><i>Price</i></h4>
+                </th>
+                <th>
+                    <h4><i>Components</i></h4>
+                </th>
+                <th>
+                    <h4><i>Recipe</i></h4>
+                </th>
+                <th style="width:3%">
+                    <h4><i>Edit</i></h4>
+                </th>
+                <th>
+                    <h4><i>Delete</i></h4>
+                </th>
+
+            </tr>
+
+            @*@{*@
+                @if (plist.Count != 0)
+                {
+
+                    foreach (var item in plist)
+                    {
+                        Model.product = item;
+
+                        using (Html.BeginForm("UpdateProduct", "Admin", new { category = @catcode }, FormMethod.Post @*,new { @id = "AdminProducts" }*@))
+                        { @Html.AntiForgeryToken()
+                        <tr>
+
+                            <td>
+
+                                <div class="form-group">
+                                    <div class="col-md-10">
+                                        @*<h5>*@
+                                        @*@Html.DisplayFor(modelItem => item.ProductTitle)*@
+                                        @Html.EditorFor(model => model.product.ProductTitle, Model.product.ProductTitle, new { htmlAttributes = new { @class = "form-control", @style = " @*width:55px;*@ font-size:15px; height:25px;  text-align:center; padding:1px;  color:black" } })
+                                        @*@Html.ValidationMessageFor(model => model.product.ProductTitle, "", new { @class = "text-danger", @style = "color:red" })*@
+                                        @Html.HiddenFor(model => model.product.Id)
+                                        @*</h5>*@
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group">
+                                    <div class="col-md-10">
+                                        @Html.EditorFor(model => model.product.NativeTitle, Model.product.NativeTitle, new { htmlAttributes = new { @class = "form-control", @style = " @*width:55px;*@ font-size:15px; height:25px;  text-align:center; padding:1px;  color:black" } })
+                                        @*@Html.ValidationMessageFor(model => model.product.NativeTitle, "", new { @class = "text-danger" })*@
+
+                                        @*<h5>@Html.DisplayFor(modelItem => item.NativeTitle)</h5>*@
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group">
+                                    <div class="col-md-10">
+                                        @Html.EditorFor(model => model.product.ImageSrc, Model.product.ImageSrc, new { htmlAttributes = new { @class = "form-control", @style = " @*width:55px;*@ font-size:15px; height:25px;  text-align:center; padding:1px;  color:black" } })
+                                        @*<h5>@Html.DisplayFor(modelItem => item.ImageSrc)</h5>*@
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group">
+                                    <div class="col-md-10">
+                                        @Html.EditorFor(model => model.product.SubCategory, Model.product.SubCategory, new { htmlAttributes = new { @class = "form-control", @style = " @*width:55px;*@ font-size:15px; height:25px;  text-align:center; padding:1px;  color:black" } })
+                                        @*<h5>@Html.DisplayFor(modelItem => item.SubCategory)</h5>*@
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group">
+                                    <div class="col-md-10">
+                                        @*<h5>@Html.DisplayFor(modelItem => item.Country)</h5>*@
+                                        @Html.EditorFor(model => model.product.Country, Model.product.Country, new { htmlAttributes = new { @class = "form-control", @style = " @*width:55px;*@ font-size:15px; height:25px;  text-align:center; padding:1px;  color:black" } })
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group">
+                                    <div class="col-md-10">
+                                        @*<h5>
+                                                @Html.DisplayFor(modelItem => item.PortionWeight)
+                                            </h5>*@
+                                        @Html.EditorFor(model => model.product.PortionWeight, Model.product.PortionWeight, new { htmlAttributes = new { @class = "form-control", @style = " @*width:55px;*@ font-size:15px; height:25px;  text-align:center; padding:1px;  color:black" } })
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group">
+                                    <div class="col-md-10">
+                                        @*<h5>@Html.DisplayFor(modelItem => item.CaloriesPer100g)</h5>*@
+                                        @Html.EditorFor(model => model.product.CaloriesPer100g, Model.product.CaloriesPer100g, new { htmlAttributes = new { @class = "form-control", @style = " @*width:55px;*@ font-size:15px; height:25px;  text-align:center; padding:1px;  color:black" } })
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group">
+                                    <div class="col-md-10">
+                                        @*<h5>@Html.DisplayFor(modelItem => item.PortionPrice)</h5>*@
+                                        @Html.EditorFor(model => model.product.PortionPrice, Model.product.PortionPrice, new { htmlAttributes = new { @class = "form-control", @style = " @*width:55px;*@ font-size:15px; height:25px;  text-align:center; padding:1px;  color:black" } })
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group">
+                                    <div class="col-md-10">
+                                        @*<h5>@Html.DisplayFor(modelItem => item.MainComponents)</h5>*@
+                                        @Html.EditorFor(model => model.product.MainComponents, Model.product.MainComponents, new { htmlAttributes = new { @class = "form-control", @style = " @*width:55px;*@ font-size:15px; height:25px;  text-align:center; padding:1px;  color:black" } })
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group">
+                                    <div class="col-md-10">
+                                        @*<h5>@Html.DisplayFor(modelItem => item.CookingRecipe)</h5>*@
+                                        @Html.EditorFor(model => model.product.CookingRecipe, Model.product.CookingRecipe, new { htmlAttributes = new { @class = "form-control", @style = " @*width:55px;*@ font-size:15px; height:25px;  text-align:center; padding:1px;  color:black" } })
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                @*@Html.ActionLink("Update", "UpdateProduct", "Admin", new { category = "AS" }, new { @class = "btn btn-default", @style = " width:55px; font-size:15px; height:25px;  text-align:center; padding:1px;  color: orangered", @id = "button" })*@
+                                <input type="submit" @*form="AdminProducts"*@ value="Update" @*style=" width:55px; font-size:15px; height:25px;  text-align:center; padding:1px;  color: orangered"*@ class="btn" />
+                            </td>
+                            <td>
+                                @*<button type="submit" formaction="\Admin\Delete">Delete</button>*@
+                                @*<button class="btn btn-default" style=" width:50px; font-size:15px; height:25px;  text-align:center; padding:1px; color:orange;" onclick="location.href='@Url.Action("DeleteProduct", "Admin", new {id = Convert.ToInt32(item.Id)})'">Delete</button>*@
+                                @Html.ActionLink("Delete", "DeleteProduct", "Admin", new { id = Convert.ToInt32(item.Id) }, new { @class = "btn", @id="DeleteBtn" @*, @style = " width:55px; font-size:15px; height:25px;  text-decoration: none; text-align:center; padding:1px;  color: orangered"*@ })
+                                @*<input type="submit" value="Delete" style="width:50px; font-size:15px; height:25px;  text-align:center;  padding:1px;font-weight:500; color: orange" class="btn btn-default" />*@
+                                @*<div class="DivForButton">
+                                    <a href="/Admin/DeleteProduct?id = @{Convert.ToInt32(@item.Id)} " class="btn" style=" font-weight:bold; font-size:20px;color:darkorange; ">Delete</a>
+   </div>*@
+
+</td>
+
+</tr>
+                    }
+
+                }
+            }
+            @*}*@
+        </table>
+
+        <h4 style="color:whitesmoke;"><i>Add New @fullcat</i></h4>
+        @{ Model.product = new DBMOD.Product(); }
+        @using (Html.BeginForm("AddProduct", "Admin", new { category = @catcode }, FormMethod.Post, new { @id = "AdminAddProducts" }))
+
+            {@Html.AntiForgeryToken()
+
+        <table class="table">
+
+            <tr>
+                <td>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.product.ProductTitle, null, new { htmlAttributes = new { @class = "form-control", @style = " @*width:55px;*@ font-size:15px; height:25px;  text-align:center; padding:1px;  color:black" } })
+                            @Html.ValidationMessageFor(model => model.product.ProductTitle, "Title", new { @class = "text-danger", @style = "color:whitesmoke" })
+                        </div>
+                    </div><br />
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            <input id="AddBtn" type="submit" @*form="AdminProducts"*@ value="Add" @*style=" width:55px;  padding:1px; height:25px;  font-weight:500; color: orangered"*@ class="btn" />
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.product.NativeTitle, null, new { htmlAttributes = new { @class = "form-control", @style = " @*width:55px;*@ font-size:15px; height:25px;  text-align:center; padding:1px;  color:black" } })
+                            @Html.ValidationMessageFor(model => model.product.NativeTitle, "Native", new { @class = "text-danger", @style = "color:whitesmoke" })
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.product.ImageSrc, null, new { htmlAttributes = new { @class = "form-control", @style = " @*width:55px;*@ font-size:15px; height:25px;  text-align:center; padding:1px;  color:black" } })
+                            @Html.ValidationMessageFor(model => model.product.ImageSrc, "Image", new { @class = "text-danger", @style = "color:whitesmoke" })
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.product.SubCategory, null, new { htmlAttributes = new { @class = "form-control", @style = " @*width:55px;*@ font-size:15px; height:25px;  text-align:center; padding:1px;  color:black" } })
+                            @Html.ValidationMessageFor(model => model.product.SubCategory, "SubCategory", new { @class = "text-danger", @style = "color:whitesmoke" })
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.product.Country, null, new { htmlAttributes = new { @class = "form-control", @style = " @*width:55px;*@ font-size:15px; height:25px;  text-align:center; padding:1px;  color:black" } })
+                            @Html.ValidationMessageFor(model => model.product.Country, "Country", new { @class = "text-danger", @style = "color:whitesmoke" })
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.product.PortionWeight, null, new { htmlAttributes = new { @class = "form-control", @style = " @*width:55px;*@ font-size:15px; height:25px;  text-align:center; padding:1px;  color:black" } })
+                            @Html.ValidationMessageFor(model => model.product.PortionWeight, "Weigth", new { @class = "text-danger", @style = "color:whitesmoke" })
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.product.CaloriesPer100g, null, new { htmlAttributes = new { @class = "form-control", @style = " @*width:55px;*@ font-size:15px; height:25px;  text-align:center; padding:1px;  color:black" } })
+                            @Html.ValidationMessageFor(model => model.product.CaloriesPer100g, "Calories", new { @class = "text-danger", @style = "color:whitesmoke" })
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.product.PortionPrice, null, new { htmlAttributes = new { @class = "form-control", @style = " @*width:55px;*@ font-size:15px; height:25px;  text-align:center; padding:1px;  color:black" } })
+                            @Html.ValidationMessageFor(model => model.product.PortionPrice, "Price", new { @class = "text-danger", @style = "color:whitesmoke" })
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.product.MainComponents, null, new { htmlAttributes = new { @class = "form-control", @style = " @*width:55px;*@ font-size:15px; height:25px;  text-align:center; padding:1px;  color:black" } })
+                            @Html.ValidationMessageFor(model => model.product.MainComponents, "Components", new { @class = "text-danger", @style = "color:whitesmoke" })
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.product.CookingRecipe, null, new { htmlAttributes = new { @class = "form-control", @style = " @*width:55px;*@ font-size:15px; height:25px;  text-align:center; padding:1px;  color:black" } })
+                            @Html.ValidationMessageFor(model => model.product.CookingRecipe, "Recipe", new { @class = "text-danger", @style = "color:whitesmoke" })
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+
+        </table>
+
+        }
+
+    </div>
+}
+
+@{
+    ViewBag.Title = "Products";
+}
+<h2>Pick Up Products Categories You Want To Observe"</h2>
+
+@*@using (Html.BeginForm("Products", "Admin", FormMethod.Post))
+
+    {*@
+<table class="table" style="  width:50%;  ">
+
+    <tr>
+        <td style="text-align:right;">
+            <input id="Check_AS" form="AdminProducts" style=" width:20px; height:20px;" type="checkbox" name="AS" value="Y" @*@Model.AdminFilterState["AS"]*@ />
+        </td>
+        <td style=" text-align:left; vertical-align:text-top;">
+            <h4>Appetizers and Salads</h4>
+        </td>
+        <td style="text-align:right;">
+            <input id="Check_MC" form="AdminProducts" style="width:20px; height:20px;" type="checkbox" name="MC" value="Y" @*@Model.AdminFilterState["MC"]*@ />
+        </td>
+        <td style=" text-align:left;">
+            <h4>Main Courses</h4>
+        </td>
+        <td style=" text-align:right;">
+            <input id="Check_SP" form="AdminProducts" style="width:20px; height:20px;" type="checkbox" name="SP" value="Y" @*@Model.AdminFilterState["SP"]*@ />
+        </td>
+        <td style=" text-align:left;">
+            <h4>Soups</h4>
+        </td>
+        <td style=" text-align:right;">
+            <input id="Check_ALL" form="AdminProducts" style="width:20px; height:20px;" type="checkbox" name="AL" value="Y" @*@Model.AdminFilterState["AL"]*@ />
+        </td>
+        <td style=" text-align:left;">
+            <h4>All</h4>
+        </td>
+
+    </tr>
+    <tr>
+        <td style=" text-align:right;">
+            <input id="Check_DS" form="AdminProducts" style=" width:20px; height:20px;" type="checkbox" name="DS" value="Y" @*@Model.AdminFilterState["DS"]*@ />
+        </td>
+        <td style=" text-align:left;">
+            <h4>Deserts</h4>
+        </td>
+        <td style=" text-align:right;">
+            <input id="Check_BG" form="AdminProducts" style="width:20px; height:20px;" type="checkbox" name="BG" value="Y" @*@Model.AdminFilterState["BG"]*@ />
+        </td>
+        <td style=" text-align:left;">
+            <h4>Beverages</h4>
+        </td>
+        <td style=" text-align:right;">
+            <input id="Check_BR" form="AdminProducts" style=" width:20px; height:20px;" type="checkbox" name="BR" value="Y" @*@Model.AdminFilterState["BR"]*@ />
+
+        </td>
+        <td style=" text-align:left;">
+            <h4>Breads</h4>
+        </td>
+        <td style=" text-align:left;">
+            <input id="Expand" class="btn btn-md" type="submit" value="Show" style=" font-weight:bold; background-color:whitesmoke; color:black; width:60px; padding:5px;" />@*Show</a>*@
+
+            @*<input id="Expand" @*form="AdminProducts" class="btn-group" type="submit" value="Show" style=" color:black; width:60px; padding:5px;">*@
+        </td>
+        <td style=" text-align:left;">
+            <input id="Close" class="btn btn-md" type="submit" value=" Hide" style=" font-weight:bold; background-color:whitesmoke; color:black; width:60px; padding:5px;" />
+        </td>
+
+    </tr>
+
+
+</table>
+
+
+<div id="Show_AS" style="display:none;">@ProCat("Appetizers And Salads", "AS", Model.AppetizersSalads)</div>
+<div id="Show_MC" style="display:none;">@ProCat("Main Courses", "MC", Model.MainCourses)</div>
+<div id="Show_SP" style="display:none;">@ProCat("Soups", "SP", Model.Soups)</div>
+<div id="Show_DS" style="display:none;">@ProCat("Desserts", "DS", Model.Desserts)</div>
+<div id="Show_BG" style="display:none;">@ProCat("Beverages", "BG", Model.Beverages)</div>
+<div id="Show_BR" style="display:none;">@ProCat("Breads", "BR", Model.Breads)</div>
+
+@Scripts.Render("~/MyScripts/SelectCategory.js")

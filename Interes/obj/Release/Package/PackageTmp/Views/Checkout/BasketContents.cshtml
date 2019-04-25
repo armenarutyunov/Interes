@@ -1,0 +1,183 @@
+﻿@model Interes.Models.BasketGroup
+<style>
+    hr {
+        border: none; /* Убираем границу для браузера Firefox */
+        color: black; /* Цвет линии для остальных браузеров */
+        background-color: black; /* Цвет линии для браузера Firefox и Opera */
+        height: 1px; /* Толщина линии */
+    }
+
+    #bc {
+        float: left;
+        position: relative;
+        padding: 1%;
+        border: solid;
+        border-color: ivory;
+        border-width: 2px;
+    }
+
+    #cb {
+        display: inline-block;
+        padding: 1%;
+        border: solid;
+        border-color: ivory;
+        border-width: 2px;
+    }
+
+    #space {
+        display: inline-block;
+    }
+    #Pin {
+        display: inline-block;
+        position: relative;
+        vertical-align: top;
+        width: 2.4em;
+        height: 2.4em;
+        border: solid;
+        border-color: saddlebrown;
+        border-width: 0.3em;
+        border-radius: 0.7em;
+        background-image: url('../Media/CHECKOUT/PinToClose.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+</style>
+@{
+    var del = 12 - Model.BasketTotal() * 0.1;
+    if (del < 0) { del = 0; }
+}
+<div id="bc">
+    <table style="font-size:1.15em; font-weight:bold; color:black;">
+        <theader>
+            <tr><td colspan="4"><h2 style="color:darkred">Basket Contents</h2></td></tr>
+            <tr>
+                <th style="position:relative; width:20%;">
+                    Title
+                </th>
+                <th class="text-center" style="position:relative; width:20%;">
+                    Quantity
+                </th>
+                <th style="position:relative; width:20%;">
+                    Item Price
+                </th>
+                <th class="text-right" style="position:relative; width:20%;">
+                    Subtotal
+                </th>
+            </tr>
+        </theader>
+        <tr><td colspan="4"><hr /></td></tr>
+        <tbody>
+            @foreach (var rec in Model.Records)
+            {
+                <tr>
+                    <td>
+                        @rec.Product.ProductTitle
+                    </td>
+                    <td class="text-center">
+                        @rec.Quantity
+                    </td>
+                    <td>
+                        @rec.Product.PortionPrice
+                    </td>
+                    <td class="text-right">
+                        @((Convert.ToDouble(rec.Product.PortionPrice) * rec.Quantity).ToString("####.##")) $
+                    </td>
+                </tr>
+            }
+        </tbody>
+        <tr><td colspan="4"><hr /></td></tr>
+        <tfoot>
+            <tr>
+                <td colspan="2"></td>
+                <td class="text-left">
+                    Total:
+                </td>
+                <td class="text-right">
+                    @Model.BasketTotal().ToString() $
+                </td>
+            </tr>
+
+        </tfoot>
+    </table>
+</div>
+<div id="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+<div id="cb">
+    <table style="font-size:1.15em; font-weight:bold; color:black;">
+        <theader>
+            <tr><td colspan="4"><h2 style="color:darkred">Cost Breakdown</h2></td></tr>
+            <tr>
+                <th style=" width:20%;">
+                </th>
+                <th class="text-center" style=" width:20%;">
+                    Price
+                </th>
+                <th style=" width:20%;">
+                    HST
+                </th>
+                <th class="text-right" style=" width:20%;">
+                    Subtotal
+                </th>
+            </tr>
+        </theader>
+        <tr><td colspan="4"><hr /></td></tr>
+        <tbody>
+
+            <tr>
+                <td>
+                    Meal Cost
+                </td>
+                <td class="text-center">
+                    @(Model.BasketTotal().ToString("####.##"))$
+                </td>
+                <td>
+                    @((Model.BasketTotal() * 0.13).ToString("####.##"))$
+                </td>
+                <td class="text-right">
+                    @( (Model.BasketTotal() + Model.BasketTotal() * 0.13).ToString("####.##"))$
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Delivery
+                </td>
+                <td class="text-center">
+                    @del.ToString("####.##")$
+                </td>
+                <td>
+                    @((del * 0.13).ToString("####.##"))$
+                </td>
+                <td class="text-right">
+                    @((del + del * 0.13).ToString("####.##"))$
+                </td>
+            </tr>
+
+        </tbody>
+        <tr><td colspan="4"><hr /></td></tr>
+        <tfoot>
+            <tr>
+                <td>
+                    Total
+                </td>
+
+                <td class="text-center">
+                    @((Model.BasketTotal() + del).ToString("####.##"))$
+                </td>
+                <td>
+                    @((Model.BasketTotal() * 0.13 + del * 0.13).ToString("####.##"))$
+                </td>
+                <td class="text-right">
+                    @((Model.BasketTotal() + del + Model.BasketTotal() * 0.13 + del * 0.13).ToString("####.##")) $
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+<div id="space">&nbsp;&nbsp;&nbsp;</div>
+<div id="Pin">
+    <button id="BasConCloseBtn" style="width:3em; height:3em; background-color:transparent; border:none;"></button>
+</div>

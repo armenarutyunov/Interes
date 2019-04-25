@@ -28,3 +28,18 @@ C:\ARMEN\Interes-master\EntityFrameworkDataAccess\obj\Debug\EntityFrameworkDataA
 C:\ARMEN\Interes-master\EntityFrameworkDataAccess\obj\Debug\EntityFrameworkDataAccess.csproj.CopyComplete
 C:\ARMEN\Interes-master\EntityFrameworkDataAccess\obj\Debug\EntityFrameworkDataAccess.dll
 C:\ARMEN\Interes-master\EntityFrameworkDataAccess\obj\Debug\EntityFrameworkDataAccess.pdb
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\EntityFrameworkDataAccess\bin\Debug\EntityFrameworkDataAccess.dll.config
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\EntityFrameworkDataAccess\bin\Debug\EntityFrameworkDataAccess.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\EntityFrameworkDataAccess\bin\Debug\EntityFrameworkDataAccess.pdb
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\EntityFrameworkDataAccess\bin\Debug\DBMOD.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\EntityFrameworkDataAccess\bin\Debug\EntityFramework.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\EntityFrameworkDataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\EntityFrameworkDataAccess\bin\Debug\DBMOD.pdb
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\EntityFrameworkDataAccess\bin\Debug\DBMOD.dll.config
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\EntityFrameworkDataAccess\bin\Debug\EntityFramework.xml
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\EntityFrameworkDataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\EntityFrameworkDataAccess\obj\Debug\EntityFrameworkDataAccess.csprojAssemblyReference.cache
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\EntityFrameworkDataAccess\obj\Debug\EntityFrameworkDataAccess.csproj.CoreCompileInputs.cache
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\EntityFrameworkDataAccess\obj\Debug\EntityFrameworkDataAccess.csproj.CopyComplete
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\EntityFrameworkDataAccess\obj\Debug\EntityFrameworkDataAccess.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\EntityFrameworkDataAccess\obj\Debug\EntityFrameworkDataAccess.pdb

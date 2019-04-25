@@ -1,0 +1,56 @@
+﻿@model Interes.Models.Record
+<header>
+
+    <style>
+        #AddToBasket_Div_Pic {
+            float: left;
+            width: 250px;
+            height: 250px;
+            position: relative;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            border: solid;
+            border-color: whitesmoke;
+            border-width: 2px;
+        }
+
+    #AddToBasket_Div_Text {
+
+     display: inline-block;
+
+     padding:20px;
+
+}
+    .btn {
+        color: orangered;
+        background-color: transparent;
+        text-decoration: none;
+        border: solid;
+        border-color: whitesmoke;
+        border-width: 1px;
+        font-weight: bold;
+    }
+
+        .btn:hover {
+            color: orangered;
+            background-color: whitesmoke;
+        }
+    </style>
+</header>
+<script>
+ 
+    $("#BackToMenuBtn").on("click", function () {
+
+        $("#AddToBasket").css("display", "none");
+            return false;
+        });
+</script>
+<h2 style="color:orangered;">This Item Has Been Added In Your Basket</h2>
+<div id="AddToBasket_Div_Pic" style="background-image:url(@Model.Product.ImageSrc)"></div>
+<div id="AddToBasket_Div_Text">
+    <table class="tab-content">
+        <tr><th><h3>Title Of The Item</h3></th><th style="padding:0 0 0 30px;"><h3>@Model.Product.ProductTitle</h3></th></tr>
+        <tr><td><h3>Quantity of Portions</h3></td><td style="padding:0 0 0 30px;"><h3>@Model.Quantity</h3></td></tr>
+        <tr><td><h3><button id="BackToMenuBtn" class="btn">Back To Dishes Selection</button></h3></td><td style="padding:0 0 0 30px;">@*<h3><button class="btn"></button></h3>*@</td></tr>
+    </table>
+</div>

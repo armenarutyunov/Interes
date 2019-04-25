@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Online Restaurant</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+    <script>window.jQuery || document.write('<script src="~JQUERY/jquery-3.3.1.js"><\/script>');</script>
+
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+  
+    <style type="text/css">
+        @@font-face {
+            font-family: "San Francisco";
+            font-weight: 400;
+            src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+        }
+
+       @@font-face {
+            font-family: "Nautilus";
+            font-weight: 500;
+            src: url("../FONTS/Nautilus/Nautilus.otf");
+        }
+
+          @@font-face {
+            font-family: "ChristmasScript";
+            font-weight: 500;
+            src: url("../FONTS/ChristmasScript/Christmas ScriptC.ttf");
+        }
+    </style>
+    <style>
+        body {
+            /*background-image: repeating-linear-gradient(90deg,white 1%,grey 2% );*/ /*,green 3%*/
+            /*background-image: url('../Media/Login-Background-Eastern.jpg');*/
+            /*background-repeat: no-repeat;*/
+            background-image: url('../Media/Login-Background-Black.jpg');
+            background-attachment: fixed;
+        }
+
+        .DivForButton {
+            position: relative;
+            position: center;
+            height: 70%;
+            /*top: 3px;*/
+            border: solid;
+            border-radius: 7px;
+            border-width: 1px;
+            border-color: white;
+            text-align: center;
+        }
+
+            .DivForButton:hover {
+                background-color: white;
+            }
+
+        .DivForElement {
+            position: relative;
+            position: center;
+            height: 70%;
+            /*top: 0px;*/
+            color: whitesmoke;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    @{Html.RenderAction("NavForStart", "Home");}
+    @*@Html.Action("NavForStart", "Home")*@
+
+    <div class="container body-content">
+        @RenderBody()
+        @*<hr />
+            <footer>
+                <p>&copy; @DateTime.Now.Year  A&AA Production inc.</p>
+            </footer>*@
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

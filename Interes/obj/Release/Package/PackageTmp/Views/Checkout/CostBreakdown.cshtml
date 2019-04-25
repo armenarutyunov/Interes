@@ -1,0 +1,84 @@
+﻿@model Interes.Models.DeliveryCost
+<style>
+    hr {
+        border: none; /* Убираем границу для браузера Firefox */
+        color: black; /* Цвет линии для остальных браузеров */
+        background-color: black; /* Цвет линии для браузера Firefox и Opera position:relative;*/
+        height: 1px; /* Толщина линии */
+    }
+</style>
+<table style="font-size:1em; font-weight:bold; color:black;">
+    <theader>
+       
+        <tr>
+            <th style=" width:20%;">
+            </th>
+            <th class="text-center" style=" width:20%;">
+                Price 
+            </th>
+            <th style=" width:20%;">
+                HST
+            </th>
+            <th class="text-right" style=" width:20%;">
+                Subtotal
+            </th>
+        </tr>
+    </theader>
+    <tr><td colspan="4"><hr /></td></tr>
+    <tbody>
+
+        <tr>
+            <td>
+                Meal Cost
+            </td>
+            <td class="text-center">
+                @(Model.MealCost.ToString("####.##"))$
+            </td>
+            <td>
+                @Model.MealHST.ToString("####.##")$
+            </td>
+            <td class="text-right">
+               @( (Model.MealCost+Model.MealHST).ToString("####.##"))$
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Delivery
+            </td>
+            <td class="text-center">
+                @Model.DelCost.ToString("####.##")$
+            </td>
+            <td>
+                @Model.DelHST.ToString("####.##")$
+            </td>
+            <td class="text-right">
+               @((Model.DelCost + Model.DelHST).ToString("####.##"))$
+            </td>
+        </tr>
+
+    </tbody>
+    <tr><td colspan="4"><hr /></td></tr>
+    <tfoot>
+        <tr>
+            <td>
+                Total
+            </td>
+           
+            <td class="text-center">
+               @((Model.MealCost + Model.DelCost).ToString("####.##"))$
+            </td>
+            <td>
+                @((Model.MealHST + Model.DelHST).ToString("####.##"))$
+            </td>
+            <td class="text-right">
+                @((Model.MealHST + Model.DelHST+Model.MealCost + Model.DelCost).ToString("####.##")) $
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tfoot>
+</table>
+<button id="CostBreakCloseBtn" type="submit">Close</button>

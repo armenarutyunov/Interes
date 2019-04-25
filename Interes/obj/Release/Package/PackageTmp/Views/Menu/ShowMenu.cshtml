@@ -1,0 +1,460 @@
+﻿@model Interes.Models.CountryCategories
+<style>
+    body {
+        color: whitesmoke;
+    }
+
+    .DivForTableButton {
+        position: relative;
+        position: center;
+        height: 70%;
+        padding: 0.1em;
+        background-color: whitesmoke;
+        border: solid;
+        /*border-radius: 1em;*/
+        border-width: 0.1em;
+        border-color: white;
+        text-align: center;
+        /*margin: 1em;*/
+    }
+
+        .DivForTableButton:hover {
+            background-color: palevioletred;
+        }
+
+    .PortionsNumber {
+        height: 2em;
+        width: 3em;
+        background-color: black;
+        color: whitesmoke;
+    }
+
+    .NumberDown {
+        all: unset;
+        -moz-appearance: textfield;
+        width: 2em;
+        text-align: right;
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+    .NumberUp {
+        all: unset;
+        -moz-appearance: textfield;
+        width: 1em;
+        text-align: left;
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+    .raz {
+        /*all: unset;
+        -moz-appearance: textfield;*/
+        background-color: honeydew;
+        width: 4em;
+        height: 1.7em;
+        text-align: center;
+        color: black;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+        .raz::-webkit-inner-spin-button {
+            /*display: none;*/
+            opacity: 1;
+        }
+
+    .Picture:hover {
+        width: 360px;
+        height: 240px;
+    }
+
+</style>
+
+@helper MenuHeader()
+{
+    <theader @*style="font-size:20px;  text-align:left;width:90%;"*@>
+        <tr>
+            <th class="col-xs-2" style="font-size:20px;  text-align:left; float:none;">
+                <i>How It Looks</i>
+            </th>
+            <th class="col-xs-2" style="font-size:20px;  text-align:left; float:none;">
+                <i>Meal's Name</i>
+            </th>
+            <th class="col-xs-2" style="font-size:20px;  text-align:left; float:none;">
+                <i>@*Main*@Ingradients</i>
+            </th>
+            <th class="col-xs-2" style="font-size:20px;  text-align:left; float:none;">
+                <i>Weight/Calories</i>
+            </th>
+            @*<th class="col-xs-1" style="font-size:20px;  text-align:left; float:none;">
+                    <i>Country</i>
+                </th>*@
+            <th class="col-xs-1" style="font-size:20px;  text-align:left; float:none;">
+                <i>@*Portion<br />*@Price</i>
+            </th>
+            <th class="col-xs-2" style="font-size:20px;  text-align:left; float:none;">
+                <i>@*Number<br />of Items*@Quantity</i>
+            </th>
+            <th class="col-xs-1" style="font-size:20px;  text-align:left; float:none;">
+                <i>Action</i>
+            </th>
+        </tr>
+
+    </theader>
+}
+@helper CountryCat(IList<DBMOD.Product> plist, string id)
+{
+
+    <tbody @*id=@id*@ @*style="display:none"*@>
+
+
+        @{
+            if (plist.Count != 0)
+            {
+
+                foreach (var item in plist)
+                {
+
+                    Model.product = item;
+                    var pic = item.ImageSrc;
+                    using (Html.BeginForm("AddToBasket", "Menu", /*new { id = item.Id },*/FormMethod.Post))
+                    {@Html.AntiForgeryToken()
+
+                    <tr>
+
+                        <td class="col-xs-2">
+
+                            <img class="Picture" src=@pic width="120" height="80">
+                            @*@Html.DisplayFor(model => model.product.ImageSrc, "How It Looks", new { htmlAttributes = new { @style = "  font-size:2em;  text-align:center; padding:1px;" } })*@
+
+                        </td>
+                        <td class="col-xs-2" style="text-align:left">
+                            @Html.DisplayFor(model => model.product.ProductTitle, null, null)
+                            @*<br />----------
+                                <br /> @Html.DisplayFor(model => model.product.NativeTitle, Model.product.NativeTitle, null)*@
+                        </td>
+                        <td class="col-xs-2">
+                            @Html.DisplayFor(model => model.product.MainComponents, Model.product.MainComponents, null)
+                        </td>
+                        <td class="col-xs-2" style="text-align:center">
+
+                            @Html.DisplayFor(model => model.product.PortionWeight, null, null) gramm /
+                            @*<br />-----
+                                <br />*@
+                            @Html.DisplayFor(model => model.product.CaloriesPer100g, null, null) cal
+                        </td>
+                        @*<td class="col-xs-1" style="text-align:center">
+
+                                @Html.DisplayFor(model => model.product.Country, null, null)
+                            </td>*@
+                        <td class="col-xs-1" style="text-align:center">
+                            @Html.DisplayFor(model => model.product.PortionPrice, Model.product.PortionPrice, null)
+                        </td>
+
+
+                        <td class="col-xs-2" style="align-content:center">
+
+                            @*<button type="button" class="NumberDown" onclick="this.nextElementSibling.stepDown()" >-</button>*@
+
+
+
+
+                            @*@Html.HiddenFor(model => model.product.Id)*@
+                            @Html.Hidden("id", item.Id)
+                            @*<button type="button" class="NumberUp" onclick="this.previousElementSibling.stepUp()" >+</button>*@
+                            <input id="@item.Id" type="number" class="raz" name="quantity" @*list="Numbers"*@ min="1" max="100" value="1" @*readonly*@ />
+                        </td>
+                        <td class="col-xs-1" style="align-content:center">
+
+                            <div class="DivForTableButton">
+                                @*<a href="/Menu/AddToBascket/?id=Convert.ToInt32(item.Id)" class="btn btn-lg" style=" font-size:15px; font-weight:bold; padding:1px; color: darkorange;">Add To<br />Bascket</a>*@
+                                @*@Html.ActionLink("Add To Bascket", "AddToBascket", "Menu", new { id = Convert.ToInt32(item.Id) }, new { @class = "btn btn-default", @style = "  font-size:15px; text-align:center; padding:1px;  color: orangered", @id = "button" })*@
+                                <a  href="" type="submit" class="btn-group" contextmenu="Add To Basket" style=" width:6em; height:3em; font-family:Arial; font-size:1em; font-weight:bold; padding:0px; color: black;">Add to<br />Basket</a>
+                                <a href="" style="display:none">@item.Id</a>
+                            </div>
+
+                        </td>
+
+
+
+
+                    </tr>
+                }
+            }
+
+        }
+
+        }
+        @*</table>*@
+    </tbody>
+}
+
+
+@*---------------------------------------------------------------------------------------------------------------------------------------*@
+<div id="AddToBasket" style="display:none; width:70%; height:380px; border:solid; border-color:whitesmoke; border-width:2px; margin:3px; background-image:url('../Media/CART/AddToBasket_Grey.jpg');  position:relative;  top:30px; left:0px; z-index:0; padding:10px 0px 10px 20px;"></div>
+@*---------------------------------------------------------------------------------------------------------------------------------------*@
+<br/>
+<div id="Menu_AS" style="display:none;">
+    <table class="table" style=" width:90%; ">
+        <caption style="text-align:left; text-decoration-line:none;"><h3 style="color:orangered"><b>Appetizers And Salads</b></h3></caption>
+        @MenuHeader()
+    </table>
+
+    <div id="AM_AS" style="display:none;">
+        <table class="table" style="width:90%;">
+            <caption style="text-align:left; text-decoration-line:none;"><h5 style="color:darkorange"><b>Armenia</b></h5></caption>
+            @CountryCat(Model.armenia["AS"], "AM_AS")
+        </table>
+    </div>
+    <div id="AZ_AS" style="display:none;">
+        <table class="table" style="width:90%;">
+            <caption style="text-align:left; text-decoration-line:none;"><h5 style="color:darkorange"><b>Azerbaidjan</b></h5></caption>
+
+            @CountryCat(Model.azerbaidjan["AS"], "AZ_AS")
+        </table>
+    </div>
+    <div id="GE_AS" style="display:none;">
+        <table class="table" style=" width:90%;">
+            <caption style="text-align:left; text-decoration-line:none;"><h5 style="color:darkorange"><b>Georgia</b></h5></caption>
+
+            @CountryCat(Model.georgia["AS"], "GE_AS")
+        </table>
+    </div>
+    <div id="IR_AS" style="display:none;">
+        <table class="table" style="width:90%;">
+            <caption style="text-align:left; text-decoration-line:none;"><h5 style="color:darkorange"><b>Iran</b></h5></caption>
+
+            @CountryCat(Model.iran["AS"], "IR_AS")
+        </table>
+    </div>
+</div>
+@*-------------------------------------------------------------------------------------------------------------------------------------*@
+<div id="Menu_MC" style="display:none;">
+    <table class="table" style="  width:90%; ">
+        <caption style="text-align:left; text-decoration-line:none;"><h3 style="color:orangered"><b>Main Courses</b></h3></caption>
+        @MenuHeader()
+    </table>
+
+    <div id="AM_MC" style="display:none;">
+        <table class="table" style="width:90%;">
+            <caption style="text-align:left; text-decoration-line:none;"><h5 style="color:darkorange"><b>Armenia</b></h5></caption>
+            @CountryCat(Model.armenia["MC"], "AM_MC")
+        </table>
+    </div>
+    <div id="AZ_MC" style="display:none;">
+        <table class="table" style="width:90%;">
+            <caption style="text-align:left; text-decoration-line:none;"><h5 style="color:darkorange"><b>Azerbaidjan</b></h5></caption>
+
+            @CountryCat(Model.azerbaidjan["MC"], "AZ_MC")
+        </table>
+    </div>
+    <div id="GE_MC" style="display:none;">
+        <table class="table" style=" width:90%;">
+            <caption style="text-align:left; text-decoration-line:none;"><h5 style="color:darkorange"><b>Georgia</b></h5></caption>
+
+            @CountryCat(Model.georgia["MC"], "GE_MC")
+        </table>
+    </div>
+    <div id="IR_MC" style="display:none;">
+        <table class="table" style="width:90%;">
+            <caption style="text-align:left; text-decoration-line:none;"><h5 style="color:darkorange"><b>Iran</b></h5></caption>
+
+            @CountryCat(Model.iran["MC"], "IR_MC")
+        </table>
+    </div>
+</div>
+@*-------------------------------------------------------------------------------------------------------------------------------------*@
+<div id="Menu_SP" style="display:none;">
+    <table class="table" style="  width:90%; ">
+        <caption style="text-align:left; text-decoration-line:none;"><h3 style="color:orangered"><b>Soups</b></h3></caption>
+        @MenuHeader()
+    </table>
+
+    <div id="AM_SP" style="display:none;">
+        <table class="table" style="width:90%;">
+            <caption style="text-align:left; text-decoration-line:none;"><h5 style="color:darkorange"><b>Armenia</b></h5></caption>
+            @CountryCat(Model.armenia["SP"], "AM_SP")
+        </table>
+    </div>
+    <div id="AZ_SP" style="display:none;">
+        <table class="table" style="width:90%;">
+            <caption style="text-align:left; text-decoration-line:none;"><h5 style="color:darkorange"><b>Azerbaidjan</b></h5></caption>
+
+            @CountryCat(Model.azerbaidjan["SP"], "AZ_SP")
+        </table>
+    </div>
+    <div id="GE_SP" style="display:none;">
+        <table class="table" style=" width:90%;">
+            <caption style="text-align:left; text-decoration-line:none;"><h5 style="color:darkorange"><b>Georgia</b></h5></caption>
+
+            @CountryCat(Model.georgia["SP"], "GE_SP")
+        </table>
+    </div>
+    <div id="IR_SP" style="display:none;">
+        <table class="table" style="width:90%;">
+            <caption style="text-align:left; text-decoration-line:none;"><h5 style="color:darkorange"><b>Iran</b></h5></caption>
+
+            @CountryCat(Model.iran["SP"], "IR_SP")
+        </table>
+    </div>
+</div>
+@*-------------------------------------------------------------------------------------------------------------------------------------*@
+<div id="Menu_DS" style="display:none;">
+    <table class="table" style="  width:90%; ">
+        <caption style="text-align:left; text-decoration-line:none;"><h3 style="color:orangered"><b>Desserts</b></h3></caption>
+        @MenuHeader()
+    </table>
+
+    <div id="AM_DS" style="display:none;">
+        <table class="table" style="width:90%;">
+            <caption style="text-align:left; text-decoration-line:none;"><h5 style="color:darkorange"><b>Armenia</b></h5></caption>
+            @CountryCat(Model.armenia["DS"], "AM_DS")
+        </table>
+    </div>
+    <div id="AZ_DS" style="display:none;">
+        <table class="table" style="width:90%;">
+            <caption style="text-align:left; text-decoration-line:none;"><h5 style="color:darkorange"><b>Azerbaidjan</b></h5></caption>
+
+            @CountryCat(Model.azerbaidjan["DS"], "AZ_DS")
+        </table>
+    </div>
+    <div id="GE_DS" style="display:none;">
+        <table class="table" style=" width:90%;">
+            <caption style="text-align:left; text-decoration-line:none;"><h5 style="color:darkorange"><b>Georgia</b></h5></caption>
+
+            @CountryCat(Model.georgia["DS"], "GE_DS")
+        </table>
+    </div>
+    <div id="IR_DS" style="display:none;">
+        <table class="table" style="width:90%;">
+            <caption style="text-align:left; text-decoration-line:none;"><h5 style="color:darkorange"><b>Iran</b></h5></caption>
+
+            @CountryCat(Model.iran["DS"], "IR_DS")
+        </table>
+    </div>
+</div>
+@*-------------------------------------------------------------------------------------------------------------------------------------*@
+<div id="Menu_BG" style="display:none;">
+    <table class="table" style="  width:90%; ">
+        <caption style="text-align:left; text-decoration-line:none;"><h3 style="color:orangered"><b>Beverages</b></h3></caption>
+        @MenuHeader()
+    </table>
+
+    <div id="AM_BG" style="display:none;">
+        <table class="table" style="width:90%;">
+            <caption style="text-align:left; text-decoration-line:none;"><h5 style="color:darkorange"><b>Armenia</b></h5></caption>
+            @CountryCat(Model.armenia["BG"], "AM_BG")
+        </table>
+    </div>
+    <div id="AZ_BG" style="display:none;">
+        <table class="table" style="width:90%;">
+            <caption style="text-align:left; text-decoration-line:none;"><h5 style="color:darkorange"><b>Azerbaidjan</b></h5></caption>
+
+            @CountryCat(Model.azerbaidjan["BG"], "AZ_BG")
+        </table>
+    </div>
+    <div id="GE_BG" style="display:none;">
+        <table class="table" style=" width:90%;">
+            <caption style="text-align:left; text-decoration-line:none;"><h5 style="color:darkorange"><b>Georgia</b></h5></caption>
+
+            @CountryCat(Model.georgia["BG"], "GE_BG")
+        </table>
+    </div>
+    <div id="IR_BG" style="display:none;">
+        <table class="table" style="width:90%;">
+            <caption style="text-align:left; text-decoration-line:none;"><h5 style="color:darkorange"><b>Iran</b></h5></caption>
+
+            @CountryCat(Model.iran["BG"], "IR_BG")
+        </table>
+    </div>
+</div>
+@*-------------------------------------------------------------------------------------------------------------------------------------*@
+<div id="Menu_BR" style="display:none;">
+    <table class="table" style="  width:90%; ">
+        <caption style="text-align:left; text-decoration-line:none;"><h3 style="color:orangered"><b>Breads</b></h3></caption>
+        @MenuHeader()
+    </table>
+
+    <div id="AM_BR" style="display:none;">
+        <table class="table" style="width:90%;">
+            <caption style="text-align:left; text-decoration-line:none;"><h5 style="color:darkorange"><b>Armenia</b></h5></caption>
+            @CountryCat(Model.armenia["BR"], "AM_BR")
+        </table>
+    </div>
+    <div id="AZ_BR" style="display:none;">
+        <table class="table" style="width:90%;">
+            <caption style="text-align:left; text-decoration-line:none;"><h5 style="color:darkorange"><b>Azerbaidjan</b></h5></caption>
+
+            @CountryCat(Model.azerbaidjan["BR"], "AZ_BR")
+        </table>
+    </div>
+    <div id="GE_BR" style="display:none;">
+        <table class="table" style=" width:90%;">
+            <caption style="text-align:left; text-decoration-line:none;"><h5 style="color:darkorange"><b>Georgia</b></h5></caption>
+
+            @CountryCat(Model.georgia["BR"], "GE_BR")
+        </table>
+    </div>
+    <div id="IR_BR" style="display:none;">
+        <table class="table" style="width:90%;">
+            <caption style="text-align:left; text-decoration-line:none;"><h5 style="color:darkorange"><b>Iran</b></h5></caption>
+
+            @CountryCat(Model.iran["BR"], "IR_BR")
+        </table>
+    </div>
+</div>
+@*<div id="Menu_MC" class="table" style="display:none;">*@
+@*<table id="Menu_MC" class="table" style="display:none; width:90%; border-top-width:1px;">
+        <caption style="text-align:left;"><h3 style="color:orangered"><b>Main Courses</b></h3></caption>
+
+
+        @MenuHeader()
+        @CountryCat(Model.armenia["MC"], "AM_MC")
+        @CountryCat(Model.azerbaidjan["MC"], "AZ_MC")
+        @CountryCat(Model.georgia["MC"], "GE_MC")
+        @CountryCat(Model.iran["MC"], "IR_MC")
+
+    </table>*@
+@*<table id="Menu_SP" class="table" style="display:none; width:90%; border-top-width:1px;">
+        <caption style="text-align:left;"><h3 style="color:orangered"><b>Soups</b></h3></caption>
+
+        @MenuHeader()
+        @CountryCat(Model.armenia["SP"], "AM_SP")
+        @CountryCat(Model.azerbaidjan["SP"], "AZ_SP")
+        @CountryCat(Model.georgia["SP"], "GE_SP")
+        @CountryCat(Model.iran["SP"], "IR_SP")
+
+    </table>*@
+
+@*<table id="Menu_DS" class="table" style="display:none; width:90%; border-top-width:1px;">
+        <caption style="text-align:left;"><h3 style="color:orangered"><b>Desserts</b></h3></caption>
+
+        @MenuHeader()
+        @CountryCat(Model.armenia["DS"], "AM_DS")
+        @CountryCat(Model.azerbaidjan["DS"], "AZ_DS")
+        @CountryCat(Model.georgia["DS"], "GE_DS")
+        @CountryCat(Model.iran["DS"], "IR_DS")
+
+    </table>*@
+@*<table id="Menu_BG" class="table" style="display:none; width:90%; border-top-width:1px;">
+        <caption style="text-align:left;"><h3 style="color:orangered"><b>Beverages</b></h3></caption>
+
+        @MenuHeader()
+        @CountryCat(Model.armenia["BG"], "AM_BG")
+        @CountryCat(Model.azerbaidjan["BG"], "AZ_BG")
+        @CountryCat(Model.georgia["BG"], "GE_BG")
+        @CountryCat(Model.iran["BG"], "IR_BG")
+
+    </table>*@
+@*<table id="Menu_BR" class="table" style="display:none; width:90%; border-top-width:1px;">
+        <caption style="text-align:left;"><h3 style="color:orangered"><b>Breads</b></h3></caption>
+
+        @MenuHeader()
+        @CountryCat(Model.armenia["BR"], "AM_BR")
+        @CountryCat(Model.azerbaidjan["BR"], "AZ_BR")
+        @CountryCat(Model.georgia["BR"], "GE_BR")
+        @CountryCat(Model.iran["BR"], "IR_BR")
+
+    </table>*@
+

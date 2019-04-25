@@ -10,3 +10,15 @@ C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\DBMOD\obj\Release
 C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\DBMOD\obj\Release\DBMOD.csproj.CopyComplete
 C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\DBMOD\obj\Release\DBMOD.dll
 C:\Users\Armen\Desktop\HUMBER COLLEGE\COURSES\MySchool\Interes\DBMOD\obj\Release\DBMOD.pdb
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\DBMOD\bin\Release\DBMOD.dll.config
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\DBMOD\bin\Release\DBMOD.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\DBMOD\bin\Release\DBMOD.pdb
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\DBMOD\bin\Release\EntityFramework.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\DBMOD\bin\Release\EntityFramework.SqlServer.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\DBMOD\bin\Release\EntityFramework.xml
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\DBMOD\bin\Release\EntityFramework.SqlServer.xml
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\DBMOD\obj\Release\DBMOD.csprojAssemblyReference.cache
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\DBMOD\obj\Release\DBMOD.csproj.CoreCompileInputs.cache
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\DBMOD\obj\Release\DBMOD.csproj.CopyComplete
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\DBMOD\obj\Release\DBMOD.dll
+C:\ARMEN\HUMBER COLLEGE\COURSES\MySchool\Interes\DBMOD\obj\Release\DBMOD.pdb
