@@ -351,13 +351,13 @@
 
 </script>
 
-<div class="Body">
+<div class="Body" style="padding-left:0; margin-left:0;">
     <div id="FilterPad" class="sticky" style="display:block; z-index:+2;">
         <h2>Choose Meal Types and National Cuisines, To Select The Dishes</h2>
 
         <div id="MetaData" data-filter="@Model" type="text" style="display:none;"></div>
 
-        <table class="table" style=" width:50%;">
+        <table class="table" style=" width:90%;">
 
             <tr>
                 <td style="text-align:right;">
@@ -449,41 +449,41 @@
 
         </table>
         <table>
-        <tr>
+            <tr>
 
-            <td @*style=" text-align:center;"*@>
-               
-                <input id="ShowInMenu" class="btn btn-default" type="submit" value="Show Dishes"  />
-                
-            </td>
-            <td style="padding-left:0.5em;">
-              
-                <input id="CloseMenu" class="btn btn-default" type="submit" value=" Hide Dishes"  />
-             
-            </td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
+                <td @*style=" text-align:center;"*@>
+
+                    <input id="ShowInMenu" class="btn btn-default" type="submit" value="Show Dishes" />
+
+                </td>
+                <td style="padding-left:0.5em;">
+
+                    <input id="CloseMenu" class="btn btn-default" type="submit" value=" Hide Dishes" />
+
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
 
 
         </table>
         @*}*@
     </div>
     @*<meta name="my_id" content="@Model" />*@
+   
+        <div id="ShowSelection" style="position:relative; display:block; padding-left:0; margin-left:-1em;">@{Html.RenderAction("ShowMenu", "Menu"); }</div>
+   
+ </div>
 
-    <div id="ShowSelection" style="position:relative; display:block; ">@{Html.RenderAction("ShowMenu", "Menu"); }</div>
-
-</div>
-
-@*@Scripts.Render("~/MyScripts/SelectCountryCat.js")
-    @Scripts.Render("../MyScripts/SelectCountryCat.js")*@
+    @*@Scripts.Render("~/MyScripts/SelectCountryCat.js")
+        @Scripts.Render("../MyScripts/SelectCountryCat.js")*@
